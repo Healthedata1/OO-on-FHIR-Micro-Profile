@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="organism1"/>
+	<identifier>
+		<system value="https://acme.org/identifiers"/>
+		<value value="organism1"/>
+	</identifier>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="laboratory"/>
+			<display value="Laboratory"/>
+		</coding>
+		<coding>
+			<system value="http://hl7.org/fhir/v2/0074"/>
+			<code value="MB"/>
+			<display value="microbiology"/>
+		</coding>
+		<text value="Micro"/>
+	</category>
+	<category>
+		<coding>
+			<system value="urn:oid:2.16.840.1.113883.9.195.4.61"/>
+			<code value="RSLT"/>
+			<display value="Result"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="624-7"/>
+			<display value="Bacteria Spt Resp Cul"/>
+		</coding>
+		<coding>
+			<system value="https://acme.org/codes"/>
+			<code value="CULTID"/>
+			<display value="Culture ID"/>
+		</coding>
+		<text value="Aerobic Respiratory Culture, Sputum"/>
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2016-08-18"/>
+	<issued value="2016-08-18T23:06:32Z"/>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="23506009"/>
+			<display value="Normal flora"/>
+		</coding>
+		<text value="Normal flora"/>
+	</valueCodeableConcept>
+	<related>
+		<type value="has-member"/>
+		<target>
+			<reference value="Observation/growth1"/>
+			<display value="Moderate growth"/>
+		</target>
+	</related>
+</Observation>

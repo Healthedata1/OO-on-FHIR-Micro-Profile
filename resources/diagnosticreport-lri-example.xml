@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="lri-example"/>
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://hl7.org/fhir/identifier-type"/>
+				<code value="PLAC"/>
+				<display value="Placer Identifier"/>
+			</coding>
+		</type>
+		<system value="https://acme.org/identifiers"/>
+		<value value="RP723234"/>
+	</identifier>
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://hl7.org/fhir/identifier-type"/>
+				<code value="FILL"/>
+				<display value="Filler Identifier"/>
+			</coding>
+		</type>
+		<system value="https://acme.org/identifiers"/>
+		<value value="250401"/>
+	</identifier>
+	<identifier>
+		<type>
+			<coding>
+				<system value="https://acme.org/identifiers"/>
+				<code value="GRP"/>
+				<display value="Group"/>
+			</coding>
+		</type>
+		<system value="https://acme.org/identifiers"/>
+		<value value="RFP 123456"/>
+	</identifier>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/v2/0074"/>
+			<code value="LAB"/>
+			<display value="Laboratory"/>
+		</coding>
+		<coding>
+			<system value="http://hl7.org/fhir/v2/0074"/>
+			<code value="MB"/>
+			<display value="microbiology"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="624-7"/>
+			<display value="Bacteria Spt Resp Cul"/>
+		</coding>
+		<text value="Aerobic Respiratory Culture, Sputum"/>
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2016-08-15"/>
+	<issued value="2016-08-18T18:14:35Z"/>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+	<request>
+		<reference value="DiagnosticRequest/example"/>
+	</request>
+	<specimen>
+		<reference value="Specimen/example"/>
+	</specimen>
+	<result>
+		<reference value="Observation/organism1"/>
+		<display value="Normal Flora"/>
+	</result>
+	<result>
+		<reference value="Observation/organism2"/>
+		<display value="Klebsiella pneumoniae"/>
+	</result>
+	<result>
+		<reference value="Observation/organism3"/>
+		<display value="Staphlyococcuc aureus"/>
+	</result>
+	<result>
+		<reference value="Observation/gramstain1"/>
+		<display value="Many WBCs"/>
+	</result>
+	<result>
+		<reference value="Observation/gramstain2"/>
+		<display value="Moderate Gram Positive Rods"/>
+	</result>
+	<result>
+		<reference value="Observation/gramstain3"/>
+		<display value="Moderate Gram Positive Cocci in Chains"/>
+	</result>
+	<result>
+		<reference value="Observation/gramstain4"/>
+		<display value="Many Gram Negative Rods"/>
+	</result>
+</DiagnosticReport>
