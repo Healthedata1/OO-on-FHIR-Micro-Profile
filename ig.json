@@ -32,11 +32,7 @@
 			"defns": "microsusc-definitions.html",
 			"base": "microsusc.html",
 			"mappings": "microsusc-mappings.html"
-		},
-	
-		
-		"Observation/organism1": {
-			"source": "observation-organism1.xml"
+		}
 		}
 		
 		
