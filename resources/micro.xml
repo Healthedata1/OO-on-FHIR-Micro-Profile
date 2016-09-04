@@ -29,7 +29,7 @@
 			</sourceReference>
 		</resource>
 		
-<!--		******************EXAMPLE EXAMPLE EXAMPLE******************** -->
+<!--		******************EXAMPLE EXAMPLE EXAMPLE******************** 
 				<resource>
 			<example value="true"/>
 			<name value="LRI Micro Example"/>
@@ -48,7 +48,7 @@
 				<reference value="Observation/organism1"/>
 			</sourceReference>
 		</resource>	
-		
+-->		
 
 	</package>
 	<page>
