@@ -33,7 +33,7 @@
 			"base": "microsusc.html",
 			"mappings": "microsusc-mappings.html"
 		},
-		"DiagnosticReport/example": {
+		"DiagnosticReport/lri-example": {
 			"source": "diagnosticreport-lri-example.xml"
 		},
 		
