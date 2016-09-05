@@ -1,0 +1,49 @@
+{
+	"tool": "jekyll",
+	"paths": {
+		"resources": "resources",
+		"pages": "pages",
+		"temp": "temp",
+		"output": "output",
+		"qa": "qa",
+		"txCache": "txCache",
+		"specification": "http://hl7-fhir.github.io/"
+	},
+	"extraTemplates": [
+		"mappings"
+	],
+	"defaults": {
+		"Any": {
+			"template-format": "instance-template-format.html",
+			"template-base": "instance-template-base.html"
+		},
+		"StructureDefinition": {
+			"template-base": "instance-template-sd.html",
+			"template-defns": "instance-template-sd-definitions.html",
+			"template-mappings": "instance-template-sd-mappings.html"
+		}
+	},
+	"canonicalBase": "http://hl7.org/fhir/us/lab",
+	"source": "micro.xml",
+	"spreadsheets": [],
+	"resources": {
+		"StructureDefinition/microsusc": {
+			"source": "micro-logical.xml",
+			"defns": "microsusc-definitions.html",
+			"base": "microsusc.html",
+			"mappings": "microsusc-mappings.html"
+		},
+		"DiagnosticReport/lri-example": {
+			"source": "diagnosticreport-lri-example.xml"
+		},
+		
+		"Observation/organism1": {
+			"source": "observation-organism1.xml"
+		}
+		
+		
+		
+		
+		
+	}
+}
