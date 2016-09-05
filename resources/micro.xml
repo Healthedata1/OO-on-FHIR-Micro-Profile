@@ -36,9 +36,7 @@
 			<sourceReference>
 				<reference value="DiagnosticReport/lri-example"/>
 			</sourceReference>
-			<exampleFor>
-				<reference value="StructureDefinition/microsusc"/>
-			</exampleFor>
+		
 		</resource>	
 		
 						<resource>
