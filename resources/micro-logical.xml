@@ -1,191 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="microsusc"/>
-  <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">to do</div>
-  </text>
-  <url value="http://hl7.org/fhir/us/lab/StructureDefinition/microsusc"/>
-  <name value="MicroSusc"/>
-  <display value="Bacterial Culture and Susceptibility Logical Model"/>
-  <status value="draft"/>
-  <publisher value="Health Level Seven International fhir"/>
-  <contact>
-    <telecom>
-      <system value="other"/>
-      <value value="http://hl7.org/fhir"/>
-    </telecom>
-  </contact>
-  <date value="2016-08-25T13:58:56-07:00"/>
-  <description value="Logical Model: A Pattern to be followed to report [Culture and Sensitivity Report](https://en.wikipedia.org/wiki/Microbiological_culture)."/>
-  <fhirVersion value="1.7.0"/>
-  <mapping>
-    <identity value="v2"/>
-    <uri value="http://hl7.org/v2"/>
-    <name value="HL7 v2 Mapping"/>
-  </mapping>
-  <mapping>
-    <identity value="lri"/>
-    <uri value="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=279"/>
-    <name value="Mapping to LRI R2"/>
-  </mapping>
-  <kind value="logical"/>
-  <abstract value="false"/>
-  <type value="MicroSusc"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
-  <derivation value="specialization"/>
-
-  <differential>
-    <element id="MicroSusc">
-      <path value="MicroSusc"/>
-      <short value="Culture and Sensitivity Report"/>
-      <definition value="DiagnosticReport is the &#39;entry point&#39; for reporting and receiving micro and susceptibility results."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-      <code value="DiagnosticReport">
-      </code></type>
-      <mapping>
-        <identity value="v2"/>
-        <map value="&quot;Parent&quot; OrderObservation Group (OBR/ORC)"/>
-      </mapping>
-      <mapping>
-        <identity value="lri"/>
-        <map value="&quot;Parent&quot; OrderObservation Group (OBR/ORC)"/>
-      </mapping>
-    </element>
-    <element id="MicroSusc.gramstain">
-      <path value="MicroSusc.gramstain"/>
-      <short value="Gram Stain"/>
-      <definition value="Gram stain observations that may be present for the culture panel."/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/us/lab/StructureDefinition/gs-obs"/>
-      </type>
-      <mapping>
-        <identity value="v2"/>
-        <map value="Parent Observation Group (OBX&#39;s under Parent ORC/OBR)  for Gram stains Observations not related to a specific organism isolated.  For example &quot;few gram positive cocci&quot;."/>
-      </mapping>
-      <mapping>
-        <identity value="lri"/>
-        <map value="Parent Observation Group (OBX&#39;s under Parent ORC/OBR)  for Gram stains Observations not related to a specific organism isolated.  For example &quot;few gram positive cocci&quot;."/>
-      </mapping>
-    </element>
-    <element id="MicroSusc.other">
-      <path value="MicroSusc.other"/>
-      <short value="Other observations"/>
-      <definition value="Other observation(s)   for the culture results.  For example AOE questions being echoed back."/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/us/lab/StructureDefinition/other-obs"/>
-      </type>
-      <mapping>
-        <identity value="v2"/>
-        <map value="Parent Observation Group (OBX&#39;s under Parent ORC/OBR)  for some other Observations  not related to a specific organism isolated.  For example, an AOE."/>
-      </mapping>
-      <mapping>
-        <identity value="lri"/>
-        <map value="Parent Observation Group (OBX&#39;s under Parent ORC/OBR)  for some other Observations  not related to a specific organism isolated.  For example, an AOE."/>
-      </mapping>
-    </element>
-    <element id="MicroSusc.organism">
-      <path value="MicroSusc.organism"/>
-      <short value="Organism Identified and related observations"/>
-      <definition value="Both the  Observation for the organism that was isolated and the link to the susceptbility measurements, growth and any other observations for the organsism through the related element.  A nested group."/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/us/lab/StructureDefinition/org-obs"/>
-      </type>
-      <mapping>
-        <identity value="v2"/>
-        <map value="&quot;Parent&quot; Observation Group (OBX&#39;s under Parent ORC/OBR)  for Each Organism Identified  and OBX which identifies the Organism  (e.g. Klebsiella pneumoniae)"/>
-      </mapping>
-      <mapping>
-        <identity value="lri"/>
-        <map value="&quot;Parent&quot; Observation Group (OBX&#39;s under Parent ORC/OBR)  for Each Organism Identified  and OBX which identifies the Organism  (e.g. Klebsiella pneumoniae)"/>
-      </mapping>
-    </element>
-    <element id="MicroSusc.organism.susc">
-      <path value="MicroSusc.organism.susc"/>
-      <short value="Susceptibility Measurements"/>
-      <definition value="[Antibiotic susceptibility measurements](https://en.wikipedia.org/wiki/Antibiotic_sensitivity) for the isoalated organism which repeats for each antibiotic and method."/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/us/lab/StructureDefinition/susc-obs"/>
-      </type>
-      <mapping>
-        <identity value="v2"/>
-        <map value="&quot;CHILD&quot; OrderObservation Group (OBR/ORC) for susceptibility panels for the identified organism"/>
-      </mapping>
-      <mapping>
-        <identity value="lri"/>
-        <map value="&quot;CHILD&quot; OrderObservation Group (OBR/ORC) for susceptibility panels for the identified organism"/>
-      </mapping>
-    </element>
-    <element id="MicroSusc.organism.growth">
-      <path value="MicroSusc.organism.growth"/>
-      <short value="Growth characteristics"/>
-      <definition value="Observation for the growth characteristics for the organism that was isolated."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/us/lab/StructureDefinition/growth-obs"/>
-      </type>
-      <mapping>
-        <identity value="v2"/>
-        <map value="OBX for colony count of the organism identified"/>
-      </mapping>
-      <mapping>
-        <identity value="lri"/>
-        <map value="OBX for colony count of the organism identified"/>
-      </mapping>
-    </element>
-    <element id="MicroSusc.organism.count">
-      <path value="MicroSusc.organism.count"/>
-      <short value="Colony Count"/>
-      <definition value="Observation for the colony characteristics for the organism that was isolated."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/us/lab/StructureDefinition/colonyct-obs"/>
-      </type>
-      <mapping>
-        <identity value="v2"/>
-        <map value="OBX which characterizes the growth of the organism identified (e.g. Heavy)"/>
-      </mapping>
-      <mapping>
-        <identity value="lri"/>
-        <map value="OBX which characterizes the Organism growth  (e.g. Heavy)"/>
-      </mapping>
-    </element>
-    <element id="MicroSusc.organism.other">
-      <path value="MicroSusc.organism.other"/>
-      <short value="Other observations"/>
-      <definition value="Other observation(s)   for the organism that was isolated."/>
-      <min value="0"/>
-      <max value="*"/>
-      <type>
-        <code value="Reference"/>
-        <profile value="http://hl7.org/fhir/us/lab/StructureDefinition/other-obs"/>
-      </type>
-      <mapping>
-        <identity value="v2"/>
-        <map value="OBX with some other measurement  of the organism identified"/>
-      </mapping>
-      <mapping>
-        <identity value="lri"/>
-        <map value="OBX with some other measurement  of the organism identified"/>
-      </mapping>
-    </element>
-  </differential>
+	<id value="microsusc"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">to do</div>
+	</text>
+	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/microsusc"/>
+	<name value="MicroSusc"/>
+	<display value="Bacterial Culture and Susceptibility Logical Model"/>
+	<status value="draft"/>
+	<publisher value="Health Level Seven International fhir"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<date value="2016-08-25T13:58:56-07:00"/>
+	<description value="Logical Model: A Pattern to be followed to report [Culture and Sensitivity Report](https://en.wikipedia.org/wiki/Microbiological_culture)."/>
+	<fhirVersion value="1.7.0"/>
+	<mapping>
+		<identity value="v2"/>
+		<uri value="http://hl7.org/v2"/>
+		<name value="HL7 v2 Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="lri"/>
+		<uri value="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=279"/>
+		<name value="Mapping to LRI R2"/>
+	</mapping>
+	<kind value="logical"/>
+	<abstract value="false"/>
+	<type value="MicroSusc"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="MicroSusc">
+			<path value="MicroSusc"/>
+			<short value="Culture and Sensitivity Report"/>
+			<definition value="DiagnosticReport is the &#39;entry point&#39; for reporting and receiving micro and susceptibility results."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="DiagnosticReport">
+				</code>
+			</type>
+			<mapping>
+				<identity value="v2"/>
+				<map value="&quot;Parent&quot; OrderObservation Group (OBR/ORC)"/>
+			</mapping>
+			<mapping>
+				<identity value="lri"/>
+				<map value="&quot;Parent&quot; OrderObservation Group (OBR/ORC)"/>
+			</mapping>
+		</element>
+		<element id="MicroSusc.gramstain">
+			<path value="MicroSusc.gramstain"/>
+			<short value="Gram Stain"/>
+			<definition value="Gram stain observations that may be present for the culture panel."/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Observation"/>
+			</type>
+			<mapping>
+				<identity value="Profile"/>
+				<map value="http://hl7.org/fhir/us/lab/StructureDefinition/gs-obs"/>
+			</mapping>
+			<mapping>
+				<identity value="v2"/>
+				<map value="Parent Observation Group (OBX&#39;s under Parent ORC/OBR)  for Gram stains Observations not related to a specific organism isolated.  For example &quot;few gram positive cocci&quot;."/>
+			</mapping>
+			<mapping>
+				<identity value="lri"/>
+				<map value="Parent Observation Group (OBX&#39;s under Parent ORC/OBR)  for Gram stains Observations not related to a specific organism isolated.  For example &quot;few gram positive cocci&quot;."/>
+			</mapping>
+		</element>
+		<element id="MicroSusc.other">
+			<path value="MicroSusc.other"/>
+			<short value="Other observations"/>
+			<definition value="Other observation(s)   for the culture results.  For example AOE questions being echoed back."/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Observation"/>
+			</type>
+			<mapping>
+				<identity value="Profile"/>
+				<map value="http://hl7.org/fhir/us/lab/StructureDefinition/other-obs"/>
+			</mapping>
+			<mapping>
+				<identity value="v2"/>
+				<map value="Parent Observation Group (OBX&#39;s under Parent ORC/OBR)  for some other Observations  not related to a specific organism isolated.  For example, an AOE."/>
+			</mapping>
+			<mapping>
+				<identity value="lri"/>
+				<map value="Parent Observation Group (OBX&#39;s under Parent ORC/OBR)  for some other Observations  not related to a specific organism isolated.  For example, an AOE."/>
+			</mapping>
+		</element>
+		<element id="MicroSusc.organism">
+			<path value="MicroSusc.organism"/>
+			<short value="Organism Identified and related observations"/>
+			<definition value="Both the  Observation for the organism that was isolated and the link to the susceptbility measurements, growth and any other observations for the organsism through the related element.  A nested group."/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Observation"/>
+			</type>
+			<mapping>
+				<identity value="Profile"/>
+				<map value="http://hl7.org/fhir/us/lab/StructureDefinition/org-obs"/>
+			</mapping>
+			<mapping>
+				<identity value="v2"/>
+				<map value="&quot;Parent&quot; Observation Group (OBX&#39;s under Parent ORC/OBR)  for Each Organism Identified  and OBX which identifies the Organism  (e.g. Klebsiella pneumoniae)"/>
+			</mapping>
+			<mapping>
+				<identity value="lri"/>
+				<map value="&quot;Parent&quot; Observation Group (OBX&#39;s under Parent ORC/OBR)  for Each Organism Identified  and OBX which identifies the Organism  (e.g. Klebsiella pneumoniae)"/>
+			</mapping>
+		</element>
+		<element id="MicroSusc.organism.susc">
+			<path value="MicroSusc.organism.susc"/>
+			<short value="Susceptibility Measurements"/>
+			<definition value="[Antibiotic susceptibility measurements](https://en.wikipedia.org/wiki/Antibiotic_sensitivity) for the isoalated organism which repeats for each antibiotic and method."/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Observation"/>
+			</type>
+			<mapping>
+				<identity value="Profile"/>
+				<map value="http://hl7.org/fhir/us/lab/StructureDefinition/susc-obs"/>
+			</mapping>
+			<mapping>
+				<identity value="v2"/>
+				<map value="&quot;CHILD&quot; OrderObservation Group (OBR/ORC) for susceptibility panels for the identified organism"/>
+			</mapping>
+			<mapping>
+				<identity value="lri"/>
+				<map value="&quot;CHILD&quot; OrderObservation Group (OBR/ORC) for susceptibility panels for the identified organism"/>
+			</mapping>
+		</element>
+		<element id="MicroSusc.organism.growth">
+			<path value="MicroSusc.organism.growth"/>
+			<short value="Growth characteristics"/>
+			<definition value="Observation for the growth characteristics for the organism that was isolated."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Observation"/>
+			</type>
+			<mapping>
+				<identity value="Profile"/>
+				<map value="http://hl7.org/fhir/us/lab/StructureDefinition/growth-obs"/>
+			</mapping>
+			<mapping>
+				<identity value="v2"/>
+				<map value="OBX for colony count of the organism identified"/>
+			</mapping>
+			<mapping>
+				<identity value="lri"/>
+				<map value="OBX for colony count of the organism identified"/>
+			</mapping>
+		</element>
+		<element id="MicroSusc.organism.count">
+			<path value="MicroSusc.organism.count"/>
+			<short value="Colony Count"/>
+			<definition value="Observation for the colony characteristics for the organism that was isolated."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Observation"/>
+			</type>
+			<mapping>
+				<identity value="Profile"/>
+				<map value="http://hl7.org/fhir/us/lab/StructureDefinition/colonyct-obs"/>
+			</mapping>
+			<mapping>
+				<identity value="v2"/>
+				<map value="OBX which characterizes the growth of the organism identified (e.g. Heavy)"/>
+			</mapping>
+			<mapping>
+				<identity value="lri"/>
+				<map value="OBX which characterizes the Organism growth  (e.g. Heavy)"/>
+			</mapping>
+		</element>
+		<element id="MicroSusc.organism.other">
+			<path value="MicroSusc.organism.other"/>
+			<short value="Other observations"/>
+			<definition value="Other observation(s)   for the organism that was isolated."/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Observation"/>
+			</type>
+			<mapping>
+				<identity value="Profile"/>
+				<map value="http://hl7.org/fhir/us/lab/StructureDefinition/other-obs"/>
+			</mapping>
+			<mapping>
+				<identity value="v2"/>
+				<map value="OBX with some other measurement  of the organism identified"/>
+			</mapping>
+			<mapping>
+				<identity value="lri"/>
+				<map value="OBX with some other measurement  of the organism identified"/>
+			</mapping>
+		</element>
+	</differential>
 </StructureDefinition>
