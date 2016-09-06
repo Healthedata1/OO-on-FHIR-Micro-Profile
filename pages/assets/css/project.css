@@ -52,19 +52,16 @@ body {
   position: relative;
 }
 #segment-header {
-
   background-color: #f5f5f5;
 }
 #segment-header > .container {
-background-image: url( "../images/usbanner.png");
   background-color: #e6e6e6;
 }
 #segment-footer {
   background-color: #707070;
 }
 #segment-footer > .container {
-background-image: url( "../images/usbanner.png");
-  background-color:#33bbff;
+  background-color: #ad1f2f;
   color: #ffffff;
 }
 #segment-footer > .container .inner-wrapper {
