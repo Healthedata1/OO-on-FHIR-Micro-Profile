@@ -2533,7 +2533,9 @@ button.close {
   right: 0;
 }
 .navbar-inverse {
-  background-color: #ad1f2f;
+/*background-image: url( "../images/usbanner.png");*/
+background-color:#33bbff;
+
 }
 .navbar-inverse .navbar-brand {
   color: #e6e6e6;

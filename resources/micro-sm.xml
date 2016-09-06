@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureMap xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/fhir-all-xsd/structuremap.xsd">
+	<url/>
+	<name/>
+	<status/>
+	<group>
+		<name/>
+		<input>
+			<name/>
+			<mode/>
+		</input>
+		<rule>
+			<name/>
+			<source>
+				<required/>
+				<context/>
+				<contextType/>
+			</source>
+		</rule>
+	</group>
+</StructureMap>
