@@ -19,6 +19,11 @@
 	<date value="2016-08-25T13:58:56-07:00"/>
 	<description value="Logical Model: A Pattern to be followed to report [Culture and Sensitivity Report](https://en.wikipedia.org/wiki/Microbiological_culture)."/>
 	<fhirVersion value="1.7.0"/>
+		<mapping>
+		<identity value="Profile"/>
+		<uri value="http://hl7.org/fhir/us/lab/Profiles"/>
+		<name value="FHIR USLab Profile Mapping"/>
+	</mapping>
 	<mapping>
 		<identity value="v2"/>
 		<uri value="http://hl7.org/v2"/>
