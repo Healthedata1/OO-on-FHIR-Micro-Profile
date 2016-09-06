@@ -48,3 +48,4 @@ output
 ################
 *.spp
 tmp*.html
+tmp*.md

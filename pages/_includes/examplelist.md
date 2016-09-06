@@ -1,1 +1,5 @@
 - [LRI Example](http://healthedatainc.com/go-ftp/publish/diagnosticreport-lri-example.html)
+- [STU 3 Example 'Diagnosticreport-micro1')](http://hl7-fhir.github.io/diagnosticreport-micro1.html)
+- [NIST 22 ELR Examples](http://hl7v2-elr-testing.nist.gov/mu-elr/)
+- [NIST v2 LRI Example](http://hit-dev.nist.gov:8081/lri-r2/#/cb)
+- [FHIR-I Workflow Example](index.html) <!-- todo -->
