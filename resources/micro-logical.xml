@@ -19,7 +19,7 @@
 	<date value="2016-08-25T13:58:56-07:00"/>
 	<description value="Logical Model: A Pattern to be followed to report [Culture and Sensitivity Report](https://en.wikipedia.org/wiki/Microbiological_culture)."/>
 	<fhirVersion value="1.7.0"/>
-		<mapping>
+	<mapping>
 		<identity value="Profile"/>
 		<uri value="http://hl7.org/fhir/us/lab/Profiles"/>
 		<name value="FHIR USLab Profile Mapping"/>
@@ -50,6 +50,10 @@
 				<code value="DiagnosticReport">
 				</code>
 			</type>
+			<mapping>
+				<identity value="Profile"/>
+				<map value="http://hl7.org/fhir/us/lab/StructureDefinition/microsusc-dr"/>
+			</mapping>
 			<mapping>
 				<identity value="v2"/>
 				<map value="&quot;Parent&quot; OrderObservation Group (OBR/ORC)"/>
