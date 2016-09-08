@@ -44,9 +44,14 @@ Thumbs.db
 qa
 temp
 output
+txCache
 
 # XMLSpy files #
 ################
 *.spp
 tmp*.html
 tmp*.md
+
+# XMLSpy files #
+################
+.gitignore

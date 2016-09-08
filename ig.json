@@ -23,6 +23,8 @@
 			"template-mappings": "instance-template-sd-mappings.html"
 		}
 	},
+	"gen-examples": "false",
+	"do-transforms": "true",
 	"canonicalBase": "http://hl7.org/fhir/us/lab",
 	"source": "micro.xml",
 	"spreadsheets": [],
@@ -40,10 +42,5 @@
 		"Observation/organism1": {
 			"source": "observation-organism1.xml"
 		}
-		
-		
-		
-		
-		
 	}
 }

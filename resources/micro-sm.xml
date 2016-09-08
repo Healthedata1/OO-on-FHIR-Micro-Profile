@@ -1,21 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureMap xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/fhir-all-xsd/structuremap.xsd">
-	<url/>
-	<name/>
-	<status/>
+<StructureMap xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/fhir-all-xsd/structuremap.xsd">
+	<id value="micro1"/>
+	<url value="http://hl7.org/fhir/us/lab/StructureMap/micro1"/>
+	<name value="Micro Map 1"/>
+	<status value="draft"/>
+	<publisher value="HL7 OO Workgroup"/>
+	<date value="2016-09-06"/>
+	<description value="Create a StructureMap and transforms to the appropriate FHIR Structures ( Observation and DiagnosticReport Profiles)"/>
+	<useContext>
+		<coding>
+			<system value="urn:iso:std:iso:3166"/>
+			<code value="US"/>
+			<display value="United States"/>
+		</coding>
+	</useContext>
+	<requirements value="Outline the required FHIR structure for Lab reporting of culture and sensitivity results using FHIR in  US Realm."/>
+	<structure>
+		<url value="http://hl7.org/fhir/us/lab/StructureDefinition/microsusc"/>
+		<mode value="source"/>
+	</structure>
+		<structure>
+		<url value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+		<mode value="target"/>
+	</structure>
+
 	<group>
-		<name/>
+		<name value="MicroSusc"/>
+		<documentation value="make DR"/>
 		<input>
-			<name/>
-			<mode/>
+			<name value="source"/>
+			<mode value="source"/>
+			<documentation value="make DR"/>
 		</input>
 		<rule>
-			<name/>
+			<name value="rule1"/>
 			<source>
-				<required/>
-				<context/>
-				<contextType/>
+				<required value="false"/>
+				<context value="Element"/>
+				<contextType value="type"/>
 			</source>
+			<target>
+				<context value="DiagnosticReport"/>
+				<contextType value="type"/>
+				<variable value="mdr"/>
+			</target>
 		</rule>
 	</group>
 </StructureMap>
