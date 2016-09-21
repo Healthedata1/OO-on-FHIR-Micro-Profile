@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="gramstain3"/>
+	<identifier>
+		<system value="https://acme.org/identifiers"/>
+		<value value="gramstain3"/>
+	</identifier>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="laboratory"/>
+			<display value="Laboratory"/>
+		</coding>
+		<coding>
+			<system value="http://hl7.org/fhir/v2/0074"/>
+			<code value="MB"/>
+			<display value="microbiology"/>
+		</coding>
+		<text value="Micro"/>
+	</category>
+	<category>
+		<coding>
+			<system value="urn:oid:2.16.840.1.113883.9.195.4.61"/>
+			<code value="RSLT"/>
+			<display value="Result"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="664-3"/>
+			<display value="Gram Stn XXX"/>
+		</coding>
+		<coding>
+			<system value="https://acme.org/codes"/>
+			<code value="GMST"/>
+			<display value="Gram Stain"/>
+		</coding>
+		<text value="Gram Stain"/>
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2016-08-18"/>
+	<issued value="2016-08-18T23:06:32Z"/>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+	<component>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="664-3"/>
+				<display value="Gram Stn XXX"/>
+			</coding>
+			<text value="Gram Stain"/>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://acme.org/codes"/>
+				<code value="MOD"/>
+				<display value="Moderate"/>
+			</coding>
+			<text value="Moderate"/>
+		</valueCodeableConcept>
+	</component>
+	<component>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="664-3"/>
+				<display value="Gram Stn XXX"/>
+			</coding>
+			<text value="Gram Stain"/>
+		</code>
+		<valueCodeableConcept>
+			<coding>
+				<system value="https://acme.org/codes"/>
+				<code value="GPCCH"/>
+				<display value="Gram Positive Cocci in Chains"/>
+			</coding>
+			<text value="Gram Positive Cocci in Chains"/>
+		</valueCodeableConcept>
+	</component>
+</Observation>

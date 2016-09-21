@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="organism3"/>
+	<identifier>
+		<system value="https://acme.org/identifiers"/>
+		<value value="organism3"/>
+	</identifier>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="laboratory"/>
+			<display value="Laboratory"/>
+		</coding>
+		<coding>
+			<system value="http://hl7.org/fhir/v2/0074"/>
+			<code value="MB"/>
+			<display value="microbiology"/>
+		</coding>
+		<text value="Micro"/>
+	</category>
+	<category>
+		<coding>
+			<system value="urn:oid:2.16.840.1.113883.9.195.4.61"/>
+			<code value="RSLT"/>
+			<display value="Result"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="624-7"/>
+			<display value="Bacteria Spt Resp Cul"/>
+		</coding>
+		<coding>
+			<system value="https://acme.org/codes"/>
+			<code value="CULTID"/>
+			<display value="Culture ID"/>
+		</coding>
+		<text value="Aerobic Respiratory Culture, Sputum"/>
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2016-08-18"/>
+	<issued value="2016-08-18T23:06:32Z"/>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="3092008"/>
+			<display value="Staphlyococcuc aureus"/>
+		</coding>
+		<text value="Staphlyococcuc aureus"/>
+	</valueCodeableConcept>
+	<related>
+		<type value="has-member"/>
+		<target>
+			<reference value="Observation/growth3"/>
+			<display value="Heavy growth"/>
+		</target>
+	</related>
+	<related>
+		<type value="has-member"/>
+		<target>
+			<reference value="Observation/org3-amp"/>
+			<display value="Ampicillin MIC - Susceptible"/>
+		</target>
+	</related>
+	<related>
+		<type value="has-member"/>
+		<target>
+			<reference value="Observation/org3-cip"/>
+			<display value="Ciprofloxacin MIC - Susceptible"/>
+		</target>
+	</related>
+	<related>
+		<type value="has-member"/>
+		<target>
+			<reference value="Observation/org3-gent"/>
+			<display value="Gentamicin MIC  - Susceptible"/>
+		</target>
+	</related>
+</Observation>
