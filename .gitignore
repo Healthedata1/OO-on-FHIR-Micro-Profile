@@ -46,12 +46,23 @@ temp
 output
 txCache
 
-# XMLSpy files #
+# Altova files #
 ################
 *.spp
 tmp*.html
 tmp*.md
+*.mfd
+tmp*.xml
+~mf*.tmp
+edos-example1.csv
+schema-template.xsd
+infile.csv
+outfile.csv
+Log-FHIR.xlsx
 
-# XMLSpy files #
-################
-.gitignore
+# Microsoft Office #
+####################
+~*.docx
+~*.xlsx
+
+
