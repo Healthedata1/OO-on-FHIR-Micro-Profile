@@ -10,7 +10,8 @@
 		"specification": "http://hl7-fhir.github.io/"
 	},
 	"extraTemplates": [
-		"mappings"
+		"mappings",
+		"logical"
 	],
 	"defaults": {
 		"Any": {
@@ -20,27 +21,38 @@
 		"StructureDefinition": {
 			"template-base": "instance-template-sd.html",
 			"template-defns": "instance-template-sd-definitions.html",
-			"template-mappings": "instance-template-sd-mappings.html"
+			"template-mappings": "instance-template-sd-mappings.html",
+			"template-logical": "instance-template-sd-logical.html"
 		}
 	},
 	"gen-examples": "false",
 	"do-transforms": "true",
 	"canonicalBase": "http://hl7.org/fhir/us/lab",
+	  "dependencyList": [{
+    "name": "DAF",
+    "location": "http://hl7.org/fhir/current/daf",
+    "source": "resources"
+  }],
+
+	
 	"source": "micro.xml",
 	"spreadsheets": [],
 	"resources": {
+		
 		"StructureDefinition/microsusc": {
 			"source": "micro-logical.xml",
 			"defns": "microsusc-definitions.html",
-			"base": "microsusc.html",
-			"mappings": "microsusc-mappings.html"
+
+			"mappings": "microsusc-mappings.html",
+			"logical":"microsusc-logical.html"
 		},
-		"DiagnosticReport/lri-example": {
-			"source": "diagnosticreport-lri-example.xml"
-		},
-		
-		"Observation/organism1": {
-			"source": "observation-organism1.xml"
+
+		"StructureDefinition/microreport": {
+			"source": "microreport.xml",
+			"defns": "microreport-definitions.html",
+			"base": "microreport.html",
+			"mappings": "microreport-mappings.html"
 		}
+
 	}
 }

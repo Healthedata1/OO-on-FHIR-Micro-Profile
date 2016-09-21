@@ -1,4 +1,4 @@
-#### Source FHIR, V2 and Real-life Micro Suscptibility examples:
+#### Source FHIR, V2 and Real-life Micro Susceptibility examples:
 - [LRI Example in FHIR](http://healthedatainc.com/go-ftp/publish/diagnosticreport-lri-example.html)
 - [STU 3 Example 'Diagnosticreport-micro1' in FHIR)](http://hl7-fhir.github.io/diagnosticreport-micro1.html)
 - [NIST v2 ELR Examples](http://hl7v2-elr-testing.nist.gov/mu-elr/)

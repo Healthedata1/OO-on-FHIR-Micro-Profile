@@ -28,6 +28,14 @@
 				<reference value="StructureDefinition/microsusc"/>
 			</sourceReference>
 		</resource>
+		
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/microreport"/>
+			</sourceReference>
+		</resource>
+		
 <!--		******************StructureMapStructureMapStructureMap******************** 
 <resource>
 			<example value="false"/>
@@ -38,7 +46,7 @@
 
 -->
 		
-<!--		******************EXAMPLE EXAMPLE EXAMPLE******************** -->
+<!--		******************EXAMPLE EXAMPLE EXAMPLE********************
 				<resource>
 			<example value="true"/>
 			<name value="LRI Micro Example"/>
@@ -54,7 +62,7 @@
 				<reference value="Observation/organism1"/>
 			</sourceReference>
 		</resource>	
-	
+	-->
 
 	</package>
 	<page>

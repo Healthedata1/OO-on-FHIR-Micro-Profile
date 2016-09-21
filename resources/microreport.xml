@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/build/publish/structuredefinition.xsd">
+	<id value="microreport"/>
+	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/microreport"/>
+	<name value="US-Core Micro Report"/>
+	<status value="draft"/>
+	<publisher value="Health Level Seven International (Order and Observations/ US Realm Task Force"/>
+	<date value="2016-09-21"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="DiagnosticReport"/>
+	<baseDefinition value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-diagnosticreport"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="uscore-microreport-1">
+			<path value="MIcroReport"/>
+			<name value="US-Core Micro Report"/>
+			<definition value="Micro Report refers to microbiological culture and sensitivity reporting.   The DiagnosticReport is the 'entry point' for reporting and receiving these results.  The various observations are nested in groups within the the Micro Report so that the proper context for nested observatio can be made.  This is an exception to the general principle in FHIR in which one does not assume contest conduction  between the resources."/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+	</differential>
+</StructureDefinition>
