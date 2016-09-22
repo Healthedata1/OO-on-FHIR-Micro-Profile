@@ -104,5 +104,22 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<element id="uscore-microreport-13">
+			<path value="DiagnosticReport.specimen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-microreport-14">
+			<path value="DiagnosticReport.conclusion"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-microreport-15">
+			<path value="DiagnosticReport.codedDiagnosis"/>
+			<mustSupport value="true"/>
+
+		</element>
+					<element id="uscore-microreport-16">
+				<path value="DiagnosticReport.presentedForm"/>
+				<mustSupport value="true"/>
+			</element>
 	</differential>
 </StructureDefinition>
