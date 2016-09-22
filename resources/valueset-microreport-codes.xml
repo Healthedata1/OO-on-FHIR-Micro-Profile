@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir //ERICS-AIR/ehaas/Documents/FHIR/FHIR%20tools/fhir-all-xsd/valueset.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="microreport-codes"/>
+	<url value="http://hl7.org/fhir/us/lab/microreport-codes"/>
+	<name value="Bacterial Culture and Susceptibility Codes"/>
+	<status value="draft"/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value="The [LOINC](http://loinc.org/) codes used to describe Bacterial Culture results."/>
+	<compose>
+		<include>
+			<system value="http://loinc.org  "/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="regex"/>
+				<value value="culture|Culture"/>
+			</filter>
+		</include>
+	</compose>
+</ValueSet>
