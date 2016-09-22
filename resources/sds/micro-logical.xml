@@ -48,7 +48,7 @@
 			<max value="1"/>
 			<mapping>
 				<identity value="Profile"/>
-				<map value="MicroDiagnosticReport (http://hl7.org/fhir/us/lab/StructureDefinition/microsusc-dr)"/>
+				<map value="MicroDiagnosticReport (http://hl7.org/fhir/us/lab/StructureDefinition/microreport)"/>
 			</mapping>
 			<mapping>
 				<identity value="v2"/>

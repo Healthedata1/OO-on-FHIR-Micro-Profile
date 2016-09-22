@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="gramstain-codes"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/gramstain-codes"/>
+	<name value="Gram Stain Codes"/>
+	<status value="draft"/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value="The [LOINC](http://loinc.org/) codes used to describe [Bacterial Gram staining](https://en.wikipedia.org/wiki/Gram_staining) results."/>
+	<compose>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Gram stain"/>
+			</filter>
+		</include>
+	</compose>
+</ValueSet>

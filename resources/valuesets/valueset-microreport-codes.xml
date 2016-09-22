@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="microreport-codes"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/microreport-codes"/>
+	<name value="Bacterial Culture and Susceptibility Codes"/>
+	<status value="draft"/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value="The [LOINC](http://loinc.org/) codes used to describe Bacterial Culture results."/>
+	<compose>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Organism specific culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Aerobic culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Anaerobic culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Acute respiratory distress culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Biopsy culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Intravascular line culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Organism specific culture.NPIP method"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Anaerobic+Aerobic culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Respiratory culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Aerobic culture 25 deg C incubation"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Anaerobic culture 25 deg C incubation"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Sterile body fluid culture"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="METHOD_TYP"/>
+				<op value="="/>
+				<value value="Culture"/>
+			</filter>
+		</include>
+	</compose>
+</ValueSet>

@@ -34,23 +34,23 @@
 			"source": "resources"
 		}
 	],
-	"source": "micro.xml",
+	"source": "ig/micro.xml",
 	"spreadsheets": [],
 	"resources": {
 		"StructureDefinition/microsusc": {
-			"source": "micro-logical.xml",
+			"source": "sds/micro-logical.xml",
 			"defns": "microsusc-definitions.html",
 			"mappings": "microsusc-mappings.html",
 			"logical": "microsusc-logical.html"
 		},
 		"StructureDefinition/microreport": {
-			"source": "microreport.xml",
+			"source": "sds/microreport.xml",
 			"defns": "microreport-definitions.html",
 			"base": "microreport.html",
 			"mappings": "microreport-mappings.html"
 		},
 				"ValueSet/microreport-codes": {
-					source": "valueset-microreport-codes.xml",
+					"source": "valuesets/valueset-microreport-codes.xml",
 			 "base": "microreport-codes.html"
 		}
 
