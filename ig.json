@@ -10,8 +10,7 @@
 		"specification": "http://hl7-fhir.github.io/"
 	},
 	"extraTemplates": [
-		"mappings",
-		"logical"
+		"mappings", "logical"
 	],
 	"defaults": {
 		"Any": {
@@ -28,31 +27,27 @@
 	"gen-examples": "false",
 	"do-transforms": "true",
 	"canonicalBase": "http://hl7.org/fhir/us/lab",
-	  "dependencyList": [{
-    "name": "DAF",
-    "location": "http://hl7.org/fhir/current/daf",
-    "source": "resources"
-  }],
-
-	
+	"dependencyList": [
+		{
+			"name": "DAF",
+			"location": "http://hl7.org/fhir/current/daf",
+			"source": "resources"
+		}
+	],
 	"source": "micro.xml",
 	"spreadsheets": [],
 	"resources": {
-		
 		"StructureDefinition/microsusc": {
 			"source": "micro-logical.xml",
 			"defns": "microsusc-definitions.html",
-
 			"mappings": "microsusc-mappings.html",
-			"logical":"microsusc-logical.html"
+			"logical": "microsusc-logical.html"
 		},
-
 		"StructureDefinition/microreport": {
 			"source": "microreport.xml",
 			"defns": "microreport-definitions.html",
 			"base": "microreport.html",
 			"mappings": "microreport-mappings.html"
 		}
-
 	}
 }
