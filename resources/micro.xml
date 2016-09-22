@@ -36,6 +36,14 @@
 			</sourceReference>
 		</resource>
 		
+		   <!-- *********************value sets value sets value sets value sets **************************-->
+    <resource>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/microreport-codes"/>
+      </sourceReference>
+    </resource>
+		
 <!--		******************StructureMapStructureMapStructureMap******************** 
 <resource>
 			<example value="false"/>

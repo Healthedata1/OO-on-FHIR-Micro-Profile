@@ -48,6 +48,11 @@
 			"defns": "microreport-definitions.html",
 			"base": "microreport.html",
 			"mappings": "microreport-mappings.html"
+		},
+				"ValueSet/microreport-codes": {
+					source": "valueset-microreport-codes.xml",
+			 "base": "microreport-codes.html"
 		}
+
 	}
 }

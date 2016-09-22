@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir //ERICS-AIR/ehaas/Documents/FHIR/FHIR%20tools/fhir-all-xsd/valueset.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="microreport-codes"/>
-	<url value="http://hl7.org/fhir/us/lab/microreport-codes"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/microreport-codes"/>
 	<name value="Bacterial Culture and Susceptibility Codes"/>
 	<status value="draft"/>
 	<publisher value="Orders and Observations Work Group"/>

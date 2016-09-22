@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/fhir-all-xsd/structuredefinition.xsd">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/build/publish/structuredefinition.xsd">
 	<id value="microreport"/>
 	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/microreport"/>
 	<name value="US-Core Micro Report"/>
@@ -95,6 +95,13 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<element id="uscore-microreport-17">
+			<path value="DiagnosticReport.code"/>
+			<binding>
+				<strength value="extensible"></strength>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/microreport-codes"></valueSetUri>
+			</binding>
+		</element>
 		<element id="uscore-microreport-12">
 			<path value="DiagnosticReport.request"/>
 			<min value="1"/>
@@ -115,11 +122,10 @@
 		<element id="uscore-microreport-15">
 			<path value="DiagnosticReport.codedDiagnosis"/>
 			<mustSupport value="true"/>
-
 		</element>
-					<element id="uscore-microreport-16">
-				<path value="DiagnosticReport.presentedForm"/>
-				<mustSupport value="true"/>
-			</element>
+		<element id="uscore-microreport-16">
+			<path value="DiagnosticReport.presentedForm"/>
+			<mustSupport value="true"/>
+		</element>
 	</differential>
 </StructureDefinition>
