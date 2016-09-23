@@ -49,10 +49,27 @@
 			"base": "microreport.html",
 			"mappings": "microreport-mappings.html"
 		},
-				"ValueSet/microreport-codes": {
-					"source": "valuesets/valueset-microreport-codes.xml",
-			 "base": "microreport-codes.html"
+		"StructureDefinition/gramstain-component": {
+			"source": "sds/gramstain-component.xml",
+			"defns": "gscomp-definitions.html",
+			"base": "gscomp.html",
+			"mappings": "gscomp-mappings.html"
+		},
+		"ValueSet/microreport-codes": {
+			"source": "valuesets/valueset-microreport-codes.xml",
+			"base": "microreport-codes.html"
+		},
+		"ValueSet/gramstain-codes": {
+			"source": "valuesets/valueset-gramstain-codes.xml",
+			"base": "gs-codes.html"
+		},
+		"ValueSet/gramstain-bacteria-codes": {
+			"source": "valuesets/valueset-gramstain-bacteria-codes.xml",
+			"base": "gs-bacteria-codes.html"
+		},
+		"ValueSet/gramstain-qualifier-codes": {
+			"source": "valuesets/valueset-gramstain-qualifier-codes.xml",
+			"base": "gs-qualifier-codes.html"
 		}
-
 	}
 }

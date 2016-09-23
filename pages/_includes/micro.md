@@ -12,7 +12,7 @@ Profile|Derived from|Core Resource
 ---|---|---
 [MicroReport](microreport.html)|[US-Core DiagnosticReport],[USLAB DiagnosticReport]|DiagnosticReport
 Organism Observation|[US-Core Observation],[USLAB Observation Panel]|Observation
-Gram Stain Observations|[US-Core Observation],[USLAB Coded Observation]|Observation
+[Gram Stain Observations](gscomp.html)|[US-Core Observation],[USLAB Coded Observation]|Observation
 Organism Growth Observations|[US-Core Observation],[USLAB Numeric Observation]|Observation
 Organism Colony Count Observations|[US-Core Observation],[USLAB Observation Panel]|Observation
 Othe Micro Observations|[US-Core Observation],[USLAB Observation Panel]|Observation

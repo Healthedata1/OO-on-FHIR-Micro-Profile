@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/build/publish/structuredefinition.xsd">
+	<id value="gramstain-component"/>
+	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/gramstain-component"/>
+	<name value="US-Core Gram Stain Component Profile"/>
+	<status value="draft"/>
+	<publisher value="Health Level Seven International (Order and Observations/ US Realm Task Force"/>
+	<date value="2016-09-21"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-resultobs"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="uscore-gscomp-1">
+			<path value="Observation"/>
+			<name value="US-Core Gram Stain Component Profile"/>
+			<definition value="This Profile on Observation defines the gram stain observations for a culture. There are two potential patterns for reporting a Gram Stain results: 1) a single observation on the cytologic description -e.g. 'Gram Positive Bacilli' 2) a pair of observations describing the relative number as well as the cytologic descripion - e.g. 'Many Gram Positive Bacilli'. This profile describes the structure for the second case."/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		
+
+		<element id="uscore-gscomp-2">
+			<path value="Observation.category"/>
+			<min value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-category"/>
+					<code value="laboratory"/>
+				</coding>
+				<coding>
+					<system value="http://hl7.org/fhir/v2/0074"/>
+					<code value="MB"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		
+	
+		<element id="uscore-gscomp-3">
+			<path value="Observation.code"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/gramstain-codes"/>
+			</binding>
+		</element>
+		<element id="uscore-gscomp-4">
+			<path value="Observation.effective[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-gscomp-5">
+			<path value="Observation.issued"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-gscomp-6">
+			<path value="Observation.performer"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference">
+				</code>
+				<profile value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-organization"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		
+		<element id="uscore-gscomp-7">
+			<path value="Observation.value[x]"/>
+    <name value="DAFValueType"/>
+			<max value="0"/>
+		</element>
+
+		<element id="uscore-gscomp-8">
+			<path value="Observation.specimen"/>
+			<mustSupport value="true"/>
+		</element>
+
+	
+		<element id="uscore-gscomp-9">
+			<path value="Observation.component"/>
+			<slicing>
+				<discriminator value=".valueCodeableConcept."/>
+				<rules value="openAtEnd"/>
+			</slicing>
+			<short value="relative number and cytologic description"/>
+			<min value="2"/>
+			<max value="*"/>
+		</element>
+		<element id="uscore-gscomp-10">
+			<path value="Observation.component"/>
+			<name value="relative-number"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="uscore-gscomp-11">
+			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/gramstain-codes"/>
+			</binding>
+		</element>
+		<element id="uscore-gscomp-12">
+			<path value="Observation.component.valueCodeableConcept"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/gramstain-qualifier-codes"/>
+			</binding>
+		</element>
+		<element id="uscore-gscomp-13">
+			<path value="Observation.component"/>
+			<name value="cytologic-description"/>
+			<min value="1"/>
+			<max value="1"/>
+		</element>
+		<element id="uscore-gscomp-14">
+			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/gramstain-codes"/>
+			</binding>
+		</element>
+		<element id="uscore-gscomp-15">
+			<path value="Observation.component.valueCodeableConcept"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/gramstain-bacteria-codes"/>
+			</binding>
+		</element>
+	</differential>
+</StructureDefinition>

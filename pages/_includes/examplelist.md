@@ -7,5 +7,5 @@
 - Turbo's Urine Culture: [Page1](https://github.com/Healthedata1/OO-on-FHIR-Micro-Profile/blob/master/IMG_2737.JPG) and [Page2](https://github.com/Healthedata1/OO-on-FHIR-Micro-Profile/blob/master/IMG_2738.JPG)
 
 #### Examples mapped logical Model
- - [LRI Example](https://github.com/Healthedata1/OO-on-FHIR-Micro-Profile/blob/master/resources/LRI-logical-example.xml)
+ - [LRI Example](https://github.com/Healthedata1/OO-on-FHIR-Micro-Profile/blob/master/resources/examples/LRI-logical-example.xml)
 

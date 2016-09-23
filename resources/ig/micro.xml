@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir">
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/FHIR%20tools/fhir-all-xsd/implementationguide.xsd">
 	<id value="microsusc"/>
 	<url value="http://hl7.org/fhir/us/lab/microsusc"/>
 	<version value="1"/>
@@ -21,30 +21,51 @@
 -->
 	<package>
 		<name value="base"/>
-<!--		******************StructureDefinitionStructureDefinitionStructureDefinition********************-->
+		<!--		******************StructureDefinitionStructureDefinitionStructureDefinition********************-->
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/microsusc"/>
 			</sourceReference>
 		</resource>
-		
-				<resource>
+		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/microreport"/>
 			</sourceReference>
 		</resource>
-		
-		   <!-- *********************value sets value sets value sets value sets **************************-->
-    <resource>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="ValueSet/microreport-codes"/>
-      </sourceReference>
-    </resource>
-		
-<!--		******************StructureMapStructureMapStructureMap******************** 
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/gramstain-component"/>
+			</sourceReference>
+		</resource>
+		<!-- *********************value sets value sets value sets value sets **************************-->
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/microreport-codes"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/gramstain-codes"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/gramstain-qualifier-codes"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/gramstain-bacteria-codes"/>
+			</sourceReference>
+		</resource>
+		<!--		******************StructureMapStructureMapStructureMap******************** 
 <resource>
 			<example value="false"/>
 			<sourceReference>
@@ -53,8 +74,7 @@
 		</resource>	
 
 -->
-		
-<!--		******************EXAMPLE EXAMPLE EXAMPLE********************
+		<!--		******************EXAMPLE EXAMPLE EXAMPLE********************
 				<resource>
 			<example value="true"/>
 			<name value="LRI Micro Example"/>
@@ -71,7 +91,6 @@
 			</sourceReference>
 		</resource>	
 	-->
-
 	</package>
 	<page>
 		<source value="index.html"/>

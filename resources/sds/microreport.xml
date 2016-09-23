@@ -85,11 +85,11 @@
 			<min value="1"/>
 			<patternCodeableConcept>
 				<coding>
-					<system value="http://hl7.org/fhir/DiagnosticReport-category"/>
+					<system value="http://hl7.org/fhir/v2/0074"/>
 					<code value="LAB"/>
 				</coding>
 				<coding>
-					<system value="http://hl7.org/fhir/DiagnosticReport-category"/>
+					<system value="http://hl7.org/fhir/v2/0074"/>
 					<code value="MB"/>
 				</coding>
 			</patternCodeableConcept>
