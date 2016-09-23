@@ -19,3 +19,8 @@ Othe Micro Observations|[US-Core Observation],[USLAB Observation Panel]|Observat
 Micro ABX Susceptibility Coded Observations|[US-Core Observation],[USLAB Coded Observation]|Observation
 Micro ABX Susceptibility Numeric Observations|[US-Core Observation],[USLAB Numeric Observation]|Observation
 
+[US-Core DiagnosticReport]: (http://hl7.org/FHIR/us/daf/2016Sep/daf-core-diagnosticreport.html)
+[US-Core Observation]: (http://hl7.org/FHIR/us/daf/2016Sep/daf-core-resultobs.html)
+[USLAB DiagnosticReport]: (http://hl7.org/fhir/uslab/uslab-dr.html)
+[USLAB Coded Observation]:  (http://hl7.org/fhir/uslab/uslab-obsquantity.html)
+[USLAB Numeric Observation]:  (http://hl7.org/fhir/uslab/uslab-obscode.html)

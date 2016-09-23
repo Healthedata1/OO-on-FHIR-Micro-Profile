@@ -89,8 +89,19 @@
 			<sourceReference>
 				<reference value="Observation/organism1"/>
 			</sourceReference>
-		</resource>	
+		</resource>
 	-->
+						<resource>
+			<example value="true"/>
+			<name value="GS1"/>
+			<sourceReference>
+				<reference value="Observation/gramstain1"/>
+			</sourceReference>
+		</resource>
+
+
+	
+
 	</package>
 	<page>
 		<source value="index.html"/>

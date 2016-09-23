@@ -1,7 +1,9 @@
 {
 	"tool": "jekyll",
 	"paths": {
-		"resources": "resources",
+		"resources": [
+			"resources", "examples", "mapping"
+		],
 		"pages": "pages",
 		"temp": "temp",
 		"output": "output",
@@ -70,6 +72,10 @@
 		"ValueSet/gramstain-qualifier-codes": {
 			"source": "valuesets/valueset-gramstain-qualifier-codes.xml",
 			"base": "gs-qualifier-codes.html"
+		},
+		"Observation/gramstain1": {
+			"source": "observation-gramstain1.xml",
+			"base": "gramstain1.html"
 		}
 	}
 }
