@@ -51,9 +51,9 @@
 		},
 		"StructureDefinition/gramstain-component": {
 			"source": "sds/gramstain-component.xml",
-			"defns": "gscomp-definitions.html",
-			"base": "gscomp.html",
-			"mappings": "gscomp-mappings.html"
+			"defns": "gramstain-component-definitions.html",
+			"base": "gramstain-component.html",
+			"mappings": "gramstain-component-mappings.html"
 		},
 		"ValueSet/microreport-codes": {
 			"source": "valuesets/valueset-microreport-codes.xml",
