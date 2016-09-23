@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="gramstain-qualifier-codes"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/gramstain-qualifier-codes"/>
+	<name value="Gram Stain Qualifier Codes"/>
+	<status value="draft"/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value="The [SNOMED CT](http://snomed.info/sct) qualifier concept codes for &apos;Rare&apos;, &apos;Few&apos;.&apos;Moderate&apos; and &apos;Many&apos;."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="89292003"/>
+				<display value="Rare"/>
+			</concept>
+			<concept>
+				<code value="57176003"/>
+				<display value="Few"/>
+			</concept>
+			<concept>
+				<code value="260354000"/>
+				<display value="Moderate number"/>
+			</concept>
+			<concept>
+				<code value="260396001"/>
+				<display value="Numerous"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
