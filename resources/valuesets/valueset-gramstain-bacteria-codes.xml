@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="gramstain-bacteria-codes"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/gramstain-bacteria-codes"/>
+	<name value="Gram Stain Bacteria Codes"/>
+	<status value="draft"/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value="The [SNOMED CT](http://snomed.info/sct) qualifier concept codes for gram-positive bacteria [SCTID= 8745002],gram-negative bacteria[SCTID=81325006], and gram variable &amp; Gram-indeterminate bacteria [SCTID=301780001]."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="8745002"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="81325006"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="301780001"/>
+			</filter>
+		</include>
+	</compose>
+</ValueSet>
