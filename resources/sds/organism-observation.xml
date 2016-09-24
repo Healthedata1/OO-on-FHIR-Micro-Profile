@@ -60,17 +60,22 @@
 			<mustSupport value="true"/>
 		</element>
 		<!--EH  needed to name the US-core slices in ordere to remove slices  - the snapshot view does not show these reslicing changes only shows up in the differential.  may be simpler to change US-core to invarients to alow slicing down the road GFORGE #12178 -->
-		<element id="uscore-org-16">
+				<element id="uscore-susc-14">
 			<path value="Observation.value[x]"/>
+			<name value="DAFValueType"/>
+		</element>
+		<element id="uscore-org-16">
+			<path value="Observation.valueQuantity"/>
 			<name value="DAFQuantityType"/>
 			<max value="0"/>
 		</element>
 		<element id="uscore-org-15">
-			<path value="Observation.value[x]"/>
+			<path value="Observation.valueCodeableConcept"/>
 			<name value="DAFCodeType"/>
 			<type>
 				<code value="CodeableConcept"/>
 			</type>
+			<mustSupport value="true"></mustSupport>
 			<binding>
 				<strength value="extensible"/>
 				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/microorganism"/>
