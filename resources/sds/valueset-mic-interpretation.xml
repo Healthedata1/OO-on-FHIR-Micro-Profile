@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="mic-interpretation"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/mic-interpretation"/>
+	<name value="US-Core MIC Interpretation Value Set"/>
+	<status/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value="The concepts representing the possible interpretations for a [minimal inhibitory concentration (MIC)] (http://emedicine.medscape.com/article/2103786-overview)  taken from the [Observation Interpretation Codes](http://hl7-fhir.github.io/valueset-observation-interpretation.html):&#xa;&#xa; - susceptible (S)&#xa; - intermediate (I)&#xa; - resistant (R)&#xa; - sensitive-dose dependent (SDD)&#xa; - no interpretation (NI)  (nullflavor)"/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/v2/0078"/>
+			<concept>
+				<code value="S"/>
+				<display value="Susceptible"/>
+				<designation>
+					<value value="Sensitive"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="I"/>
+				<display value="Intermediate"/>
+			</concept>
+			<concept>
+				<code value="R"/>
+				<display value="Resistant"/>
+			</concept>
+			<concept>
+				<code value="SDD"/>
+				<display value="Susceptible-dose dependent"/>
+				<designation>
+					<value value="Sensitive-dose dependent "/>
+				</designation>
+			</concept>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/v3/NullFlavor"/>
+			<concept>
+				<code value="NI"/>
+				<display value="NoInformation"/>
+				<designation>
+					<value value="No interpretation "/>
+				</designation>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

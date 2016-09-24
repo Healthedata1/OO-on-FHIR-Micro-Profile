@@ -14,7 +14,7 @@
 	<differential>
 		<element id="uscore-org-1">
 			<path value="Observation"/>
-			<name value="US-Core Other Observation Profile"/>
+			<name value="US-Core Organism Observation Profile"/>
 			<definition value="This Profile on Observation defines the Observation of Organism(s) isolated for a culture.  The point of a culture is isolate and identify the bug(s) in a specimen. This profile represents the finding (isolation of) a organism as well as the links to related observatins on the isolated organism such as colony count, growth characteristics and susceptibility results."/>
 			<mustSupport value="false"/>
 			<isModifier value="false"/>

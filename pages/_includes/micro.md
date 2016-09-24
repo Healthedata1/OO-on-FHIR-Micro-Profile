@@ -17,8 +17,7 @@ Profile|Derived from|Core Resource
 [Organism Observation](organism-observation.html)|[US-Core Observation],[USLAB Observation Panel]|Observation
 Organism Growth Observations|[US-Core Observation],[USLAB Numeric Observation]|Observation
 Organism Colony Count Observations|[US-Core Observation],[USLAB Observation Panel]|Observation
-Micro ABX Susceptibility Coded Observations|[US-Core Observation],[USLAB Coded Observation]|Observation
-Micro ABX Susceptibility Numeric Observations|[US-Core Observation],[USLAB Numeric Observation]|Observation
+[MIC Susceptibility Numeric Observations](susc-observation.html)|[US-Core Observation],[USLAB Numeric Observation]|Observation
 
 [US-Core DiagnosticReport]: (http://hl7.org/FHIR/us/daf/2016Sep/daf-core-diagnosticreport.html)
 [US-Core Observation]: (http://hl7.org/FHIR/us/daf/2016Sep/daf-core-resultobs.html)

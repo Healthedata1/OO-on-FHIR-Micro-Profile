@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/build/publish/structuredefinition.xsd">
+	<id value="susc-observation"/>
+	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/susc-observation"/>
+	<name value="US-Core MIC Susceptibility Observation Profile"/>
+	<status value="draft"/>
+	<publisher value="Health Level Seven International (Order and Observations/ US Realm Task Force"/>
+	<date value="2016-09-21"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-resultobs"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="uscore-susc-1">
+			<path value="Observation"/>
+			<name value="US-Core MIC Susceptibility Observation Profile"/>
+			<definition value="This Observation profile defines the Susceptiblity Measurement reported as a minimal inhibitory concentration (MIC).  Susceptibility results are commonly reported as the minimal inhibitory concentration (MIC), which is the lowest concentration of drug that inhibits the growth of the organism. Reports typically contain a quantitative result in µg/mL and a qualitative interpretation. The interpretation usually categorizes each result as susceptible (S), intermediate (I), resistant (R), sensitive-dose dependent (SD), or no interpretation (NI).(http://emedicine.medscape.com/article/2103786-overview) Other method of reporting antibacterial susceptibility may be used as well and may require additional profiles or modifications to this one"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="uscore-susc-2">
+			<path value="Observation.category"/>
+			<min value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-category"/>
+					<code value="laboratory"/>
+				</coding>
+				<coding>
+					<system value="http://hl7.org/fhir/v2/0074"/>
+					<code value="MB"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="uscore-susc-3">
+			<path value="Observation.code"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/mic"/>
+			</binding>
+		</element>
+		<element id="uscore-susc-4">
+			<path value="Observation.effective[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-susc-5">
+			<path value="Observation.issued"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-susc-6">
+			<path value="Observation.performer"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference">
+				</code>
+				<profile value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-organization"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<!--EH  needed to name the US-core slices in ordere to remove slices  - the snapshot view does not show these reslicing changes only shows up in the differential.  may be simpler to change US-core to invarients to alow slicing down the road GFORGE #12178 -->
+		<element id="uscore-susc-16">
+			<path value="Observation.value[x]"/>
+			<name value="DAFQuantityType"/>
+			<min value="1"/>
+		</element>
+		<element id="uscore-susc-15">
+			<path value="Observation.value[x]"/>
+			<name value="DAFCodeType"/>
+			<max value="0"/>
+		</element>
+		<element id="uscore-susc-17">
+			<path value="Observation.value[x]"/>
+			<name value="DAFOtherType"/>
+			<max value="0"/>
+		</element>
+		<element id="uscore-susc-7">
+			<path value="Observation.interpretation"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/mic-interpretation"/>
+			</binding>
+		</element>
+		<element id="uscore-susc-8">
+			<path value="Observation.specimen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-susc-9">
+			<path value="Observation.referenceRange"/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

@@ -75,6 +75,12 @@
 			"base": "organism-observation.html",
 			"mappings": "organism-observation-mappings.html"
 		},
+		"StructureDefinition/susc-observation": {
+			"source": "sds/susc-observation.xml",
+			"defns": "susc-observation-definitions.html",
+			"base": "susc-observation.html",
+			"mappings": "susc-observation-mappings.html"
+		},
 		"ValueSet/microreport-codes": {
 			"source": "valuesets/valueset-microreport-codes.xml",
 			"base": "microreport-codes.html"
@@ -98,6 +104,14 @@
 		"ValueSet/microorganism": {
 			"source": "valuesets/valueset-microorganism.xml",
 			"base": "microorganism.html"
+		},
+		"ValueSet/mic": {
+			"source": "valuesets/valueset-mic.xml",
+			"base": "mic.html"
+		},
+		"ValueSet/mic-interpretation": {
+			"source": "valuesets/valueset-mic-interpretation.xml",
+			"base": "mic-interpretation.html"
 		},
 		"Observation/gramstain1": {
 			"source": "observation-gramstain1.xml",

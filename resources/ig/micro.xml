@@ -52,11 +52,17 @@
 				<reference value="StructureDefinition/other-observation"/>
 			</sourceReference>
 		</resource>
-		
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/organism-observation"/>
+			</sourceReference>
+		</resource>
+		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/susc-observation"/>
 			</sourceReference>
 		</resource>		
 		
@@ -95,6 +101,18 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/microorganism"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/mic"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/mic-interpretation"/>
 			</sourceReference>
 		</resource>
 		<!--		******************StructureMapStructureMapStructureMap******************** 
