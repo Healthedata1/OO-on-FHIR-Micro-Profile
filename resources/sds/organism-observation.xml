@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/build/publish/structuredefinition.xsd">
+	<id value="organism-observation"/>
+	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/organism-observation"/>
+	<name value="US-Core Organism Observation Profile"/>
+	<status value="draft"/>
+	<publisher value="Health Level Seven International (Order and Observations/ US Realm Task Force"/>
+	<date value="2016-09-21"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-resultobs"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="uscore-org-1">
+			<path value="Observation"/>
+			<name value="US-Core Other Observation Profile"/>
+			<definition value="This Profile on Observation defines the Observation of Organism(s) isolated for a culture.  The point of a culture is isolate and identify the bug(s) in a specimen. This profile represents the finding (isolation of) a organism as well as the links to related observatins on the isolated organism such as colony count, growth characteristics and susceptibility results."/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="uscore-org-2">
+			<path value="Observation.category"/>
+			<min value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-category"/>
+					<code value="laboratory"/>
+				</coding>
+				<coding>
+					<system value="http://hl7.org/fhir/v2/0074"/>
+					<code value="MB"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="uscore-org-3">
+			<path value="Observation.code"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/microreport-codes"/>
+			</binding>
+		</element>
+		<element id="uscore-org-4">
+			<path value="Observation.effective[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-org-5">
+			<path value="Observation.issued"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-org-6">
+			<path value="Observation.performer"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference">
+				</code>
+				<profile value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-organization"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		
+		<!--EH  need to name the US-core slices in ordere to remove slices  - this only adds another slice may be simpler to change US-core to invarients to alow slicing down the road  -->
+		<element id="uscore-org-15">
+			<path value="Observation.value[x]"/>
+			<name value="DAFValueType"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/microorganism"/>
+			</binding>
+		</element>
+		
+		
+		<element id="uscore-org-8">
+			<path value="Observation.specimen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-org-9">
+			<path value="Observation.related"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-org-10">
+			<path value="Observation.related.type"/>
+			<min value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-relationshiptypes"/>
+					<code value="has-member"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="uscore-org-11">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/susc-observation"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/growth-observation"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/count-observation"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/other-observation"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

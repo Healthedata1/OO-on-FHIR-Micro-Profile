@@ -40,19 +40,26 @@
 				<reference value="StructureDefinition/gramstain-component"/>
 			</sourceReference>
 		</resource>
-				<resource>
+		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/aoe-observation"/>
 			</sourceReference>
 		</resource>
-		
-						<resource>
+		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/other-observation"/>
 			</sourceReference>
 		</resource>
+		
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/organism-observation"/>
+			</sourceReference>
+		</resource>		
+		
 		<!-- *********************value sets value sets value sets value sets **************************-->
 		<resource>
 			<example value="false"/>
@@ -78,10 +85,16 @@
 				<reference value="ValueSet/gramstain-bacteria-codes"/>
 			</sourceReference>
 		</resource>
-				<resource>
+		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/aoes"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/microorganism"/>
 			</sourceReference>
 		</resource>
 		<!--		******************StructureMapStructureMapStructureMap******************** 
@@ -110,17 +123,13 @@
 			</sourceReference>
 		</resource>
 	-->
-						<resource>
+		<resource>
 			<example value="true"/>
 			<name value="GS1"/>
 			<sourceReference>
 				<reference value="Observation/gramstain1"/>
 			</sourceReference>
 		</resource>
-
-
-	
-
 	</package>
 	<page>
 		<source value="index.html"/>

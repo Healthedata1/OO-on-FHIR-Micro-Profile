@@ -63,17 +63,18 @@
 			"base": "aoe-observation.html",
 			"mappings": "aoe-observation-mappings.html"
 		},
-		
 		"StructureDefinition/other-observation": {
 			"source": "sds/other-observation.xml",
 			"defns": "other-observation-definitions.html",
 			"base": "other-observation.html",
 			"mappings": "other-observation-mappings.html"
-		},		
-		
-		
-		
-		
+		},
+		"StructureDefinition/organism-observation": {
+			"source": "sds/organism-observation.xml",
+			"defns": "organism-observation-definitions.html",
+			"base": "organism-observation.html",
+			"mappings": "organism-observation-mappings.html"
+		},
 		"ValueSet/microreport-codes": {
 			"source": "valuesets/valueset-microreport-codes.xml",
 			"base": "microreport-codes.html"
@@ -93,6 +94,10 @@
 		"ValueSet/aoes": {
 			"source": "valuesets/valueset-aoes.xml",
 			"base": "aoes.html"
+		},
+		"ValueSet/microorganism": {
+			"source": "valuesets/valueset-microorganism.xml",
+			"base": "microorganism.html"
 		},
 		"Observation/gramstain1": {
 			"source": "observation-gramstain1.xml",
