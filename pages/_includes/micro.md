@@ -13,10 +13,10 @@ Profile|Derived from|Core Resource
 [MicroReport](microreport.html)|[US-Core DiagnosticReport],[USLAB DiagnosticReport]|DiagnosticReport
 [Gram Stain Observations](gramstain-component.html)|[US-Core Observation],[USLAB Coded Observation]|Observation
 [AOE Observations](aoe-observation.html)|[US-Core Observation],[USLAB Coded Observation],[USLAB Numeric Observation]|Observation
-[Other Micro Observations](other-observation.html)|[US-Core Observation],[USLAB Observation Panel]|Observation
-[Organism Observation](organism-observation.html)|[US-Core Observation],[USLAB Observation Panel]|Observation
-Organism Growth Observations|[US-Core Observation],[USLAB Numeric Observation]|Observation
-Organism Colony Count Observations|[US-Core Observation],[USLAB Observation Panel]|Observation
+[Other Micro Observations](other-observation.html)|[US-Core Observation],[USLAB Coded Observation],[USLAB Numeric Observation]|Observation
+[Organism Observation](organism-observation.html)|[US-Core Observation],[USLAB Coded Observation]|Observation
+[Organism Growth Observations](growth-observation.html)|[US-Core Observation],[USLAB Numeric Observation]|Observation
+[Organism Colony Count Observations](count-observation.html)|[US-Core Observation],[USLAB Numeric Observation]|Observation
 [MIC Susceptibility Numeric Observations](susc-observation.html)|[US-Core Observation],[USLAB Numeric Observation]|Observation
 
 [US-Core DiagnosticReport]: (http://hl7.org/FHIR/us/daf/2016Sep/daf-core-diagnosticreport.html)

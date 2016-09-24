@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="colonycount"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/colonycount"/>
+	<name value="US-Core Colony Count Value Set"/>
+	<status/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value=" The set of  [LOINC](http://loinc.org/) Codes with&apos;`COMPONENT` = `Colony count`"/>
+	<compose>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="="/>
+				<value value="Colony Count"/>
+			</filter>
+		</include>
+	</compose>
+</ValueSet>

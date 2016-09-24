@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="bact-growth"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/bact-growth"/>
+	<name value="US-Core Bacterial Growth Value Set"/>
+	<status/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value="The [SNOMED CT](http://snomed.info/sct) qualifier concept codes  for &apos;Heavy Growth&apos;, &apos;Moderate Growth&apos; and &apos;Scanty Growth&apos;."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="263776006"/>
+				<display value="Heavy growth"/>
+			</concept>
+			<concept>
+				<code value="263866000"/>
+				<display value="Scanty growth"/>
+			</concept>
+			<concept>
+				<code value="263812008"/>
+				<display value="Moderate growth"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

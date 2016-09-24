@@ -58,14 +58,24 @@
 				<reference value="StructureDefinition/organism-observation"/>
 			</sourceReference>
 		</resource>
-		
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/susc-observation"/>
 			</sourceReference>
-		</resource>		
-		
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/growth-observation"/>
+			</sourceReference>
+		</resource>
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/count-observation"/>
+			</sourceReference>
+		</resource>
 		<!-- *********************value sets value sets value sets value sets **************************-->
 		<resource>
 			<example value="false"/>
@@ -115,6 +125,20 @@
 				<reference value="ValueSet/mic-interpretation"/>
 			</sourceReference>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/bact-growth"/>
+			</sourceReference>
+		</resource>
+		
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/colonycount"/>
+			</sourceReference>
+		</resource>
+		
 		<!--		******************StructureMapStructureMapStructureMap******************** 
 <resource>
 			<example value="false"/>

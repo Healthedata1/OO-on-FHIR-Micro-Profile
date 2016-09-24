@@ -75,11 +75,23 @@
 			"base": "organism-observation.html",
 			"mappings": "organism-observation-mappings.html"
 		},
+		"StructureDefinition/growth-observation": {
+			"source": "sds/growth-observation.xml",
+			"defns": "growth-observation-definitions.html",
+			"base": "growth-observation.html",
+			"mappings": "growth-observation-mappings.html"
+		},
 		"StructureDefinition/susc-observation": {
 			"source": "sds/susc-observation.xml",
 			"defns": "susc-observation-definitions.html",
 			"base": "susc-observation.html",
 			"mappings": "susc-observation-mappings.html"
+		},
+		"StructureDefinition/count-observation": {
+			"source": "sds/count-observation.xml",
+			"defns": "count-observation-definitions.html",
+			"base": "count-observation.html",
+			"mappings": "count-observation-mappings.html"
 		},
 		"ValueSet/microreport-codes": {
 			"source": "valuesets/valueset-microreport-codes.xml",
@@ -112,6 +124,14 @@
 		"ValueSet/mic-interpretation": {
 			"source": "valuesets/valueset-mic-interpretation.xml",
 			"base": "mic-interpretation.html"
+		},
+		"ValueSet/bact-growth": {
+			"source": "valuesets/valueset-bact-growth.xml",
+			"base": "bact-growth.html"
+		},
+		"ValueSet/colonycount": {
+			"source": "valuesets/valueset-colonycount.xml",
+			"base": "colonycount.html"
 		},
 		"Observation/gramstain1": {
 			"source": "observation-gramstain1.xml",
