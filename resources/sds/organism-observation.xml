@@ -59,11 +59,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		
-		<!--EH  need to name the US-core slices in ordere to remove slices  - this only adds another slice may be simpler to change US-core to invarients to alow slicing down the road  -->
+		<!--EH  needed to name the US-core slices in ordere to remove slices  - the snapshot view does not show these reslicing changes only shows up in the differential.  may be simpler to change US-core to invarients to alow slicing down the road GFORGE #12178 -->
+		<element id="uscore-org-16">
+			<path value="Observation.value[x]"/>
+			<name value="DAFQuantityType"/>
+			<max value="0"/>
+		</element>
 		<element id="uscore-org-15">
 			<path value="Observation.value[x]"/>
-			<name value="DAFValueType"/>
+			<name value="DAFCodeType"/>
 			<type>
 				<code value="CodeableConcept"/>
 			</type>
@@ -72,17 +76,30 @@
 				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/microorganism"/>
 			</binding>
 		</element>
-		
-		
+		<element id="uscore-org-17">
+			<path value="Observation.value[x]"/>
+			<name value="DAFOtherType"/>
+			<max value="0"/>
+		</element>
 		<element id="uscore-org-8">
 			<path value="Observation.specimen"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--		EH:  define slices for the related observations - descriminator = @profile
+	-->
 		<element id="uscore-org-9">
 			<path value="Observation.related"/>
-			<mustSupport value="true"/>
+			<slicing>
+				<discriminator value="@profile"/>
+				<rules value="open"/>
+			</slicing>
 		</element>
 		<element id="uscore-org-10">
+			<path value="Observation.related"/>
+			<name value="SuscObs"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-org-11">
 			<path value="Observation.related.type"/>
 			<min value="1"/>
 			<patternCodeableConcept>
@@ -92,20 +109,76 @@
 				</coding>
 			</patternCodeableConcept>
 		</element>
-		<element id="uscore-org-11">
+		<element id="uscore-org-12">
 			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
 				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/susc-observation"/>
 			</type>
+		</element>
+		<element id="uscore-org-20">
+			<path value="Observation.related"/>
+			<name value="GrowthObs"/>
+					<max value="1"></max>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-org-21">
+			<path value="Observation.related.type"/>
+			<min value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-relationshiptypes"/>
+					<code value="has-member"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="uscore-org-22">
+			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
 				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/growth-observation"/>
 			</type>
+		</element>
+		<element id="uscore-org-30">
+			<path value="Observation.related"/>
+			<name value="CountObs"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-org-31">
+			<path value="Observation.related.type"/>
+			<min value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-relationshiptypes"/>
+					<code value="has-member"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="uscore-org-32">
+			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
 				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/count-observation"/>
 			</type>
+		</element>
+		<element id="uscore-org-40">
+			<path value="Observation.related"/>
+			<name value="OtherObs"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-org-41">
+			<path value="Observation.related.type"/>
+			<min value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-relationshiptypes"/>
+					<code value="has-member"/>
+				</coding>
+			</patternCodeableConcept>
+		</element>
+		<element id="uscore-org-42">
+			<path value="Observation.related.target"/>
 			<type>
 				<code value="Reference"/>
 				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/other-observation"/>
