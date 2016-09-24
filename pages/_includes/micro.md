@@ -14,7 +14,7 @@ Profile|Derived from|Core Resource
 [Gram Stain Observations](gramstain-component.html)|[US-Core Observation],[USLAB Coded Observation]|Observation
 [AOE Observations](aoe-observation.html)|[US-Core Observation],[USLAB Coded Observation],[USLAB Numeric Observation]|Observation
 [Other Micro Observations](other-observation.html)|[US-Core Observation],[USLAB Observation Panel]|Observation
-Organism Observation|[US-Core Observation],[USLAB Observation Panel]|Observation
+[Organism Observation](organism-observation.html)|[US-Core Observation],[USLAB Observation Panel]|Observation
 Organism Growth Observations|[US-Core Observation],[USLAB Numeric Observation]|Observation
 Organism Colony Count Observations|[US-Core Observation],[USLAB Observation Panel]|Observation
 Micro ABX Susceptibility Coded Observations|[US-Core Observation],[USLAB Coded Observation]|Observation
