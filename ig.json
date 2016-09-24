@@ -57,6 +57,13 @@
 			"base": "gramstain-component.html",
 			"mappings": "gramstain-component-mappings.html"
 		},
+				"StructureDefinition/aoe-observation": {
+			"source": "sds/aoe-observation.xml",
+			"defns": "aoe-observation-definitions.html",
+			"base": "aoe-observation.html",
+			"mappings": "aoe-observation-mappings.html"
+		},
+
 		"ValueSet/microreport-codes": {
 			"source": "valuesets/valueset-microreport-codes.xml",
 			"base": "microreport-codes.html"
@@ -73,6 +80,13 @@
 			"source": "valuesets/valueset-gramstain-qualifier-codes.xml",
 			"base": "gs-qualifier-codes.html"
 		},
+		
+		"ValueSet/aoes": {
+			"source": "valuesets/valueset-aoes.xml",
+			"base": "aoes.html"
+		},		
+		
+		
 		"Observation/gramstain1": {
 			"source": "observation-gramstain1.xml",
 			"base": "gramstain1.html"

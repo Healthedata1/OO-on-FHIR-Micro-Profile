@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/build/publish/structuredefinition.xsd">
+	<id value="aoe-observation"/>
+	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/aoe-observation"/>
+	<name value="US-Core AOE Observation Profile"/>
+	<status value="draft"/>
+	<publisher value="Health Level Seven International (Order and Observations/ US Realm Task Force"/>
+	<date value="2016-09-21"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-resultobs"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="uscore-aoeobs-1">
+			<path value="Observation"/>
+			<name value="US-Core AOE Observation Profile"/>
+			<definition value="This Profile on Observation defines the 'Ask at Order (AOE)' observations for a culture. AOEs can result in a variety of observations including coded, numeric and date responses. The Terminology refers to an initial valueset drafted by the [LOI}(#.html) workgroup. The pattern is assumed to be one to many simple observations for each AOE. The category 'AOE' is required for these observations in addtition to the micro and lab categories."/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<!--	******EH unable to implement slicing since DAF limits category to 1..1******
+**********see [#12176]********** made a translation for now although this is wrong easier than a new extension
+	
+		<element id="uscore-aoeobs-2">
+			<path value="Observation.category"/>
+			<slicing>
+				<discriminator value=".coding"/>
+				<rules value="openAtEnd"/>
+			</slicing>
+			<short value="micro and aoe categories"/>
+			<min value="2"/>
+			<max value="*"/>
+		</element>
+		<element id="uscore-aoeobs-3">
+			<path value="Observation.category"/>
+			<name value="micro-category"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-category"/>
+					<code value="laboratory"/>
+				</coding>
+				<coding>
+					<system value="http://hl7.org/fhir/v2/0074"/>
+					<code value="MB"/>
+				</coding>
+			</patternCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-aoeobs-4">
+			<path value="Observation.category"/>
+			<name value="AOE-category"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/us/lab/observation-category"/>
+					<code value="AOE"/>
+				</coding>
+			</patternCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+-->
+		<element id="uscore-aoeobs-3">
+			<path value="Observation.category"/>
+			<name value="micro-category"/>
+			<min value="1"/>
+			<max value="1"/>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/observation-category"/>
+					<code value="laboratory"/>
+				</coding>
+				<coding>
+					<system value="http://hl7.org/fhir/v2/0074"/>
+					<code value="MB"/>
+				</coding>
+				<coding>
+					<system value="http://hl7.org/fhir/v2/0936"/>
+					<code value="AOE"/>
+				</coding>
+			</patternCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-aoeobs-5">
+			<path value="Observation.code"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/aoes"/>
+			</binding>
+		</element>
+		<element id="uscore-aoeobs-6">
+			<path value="Observation.performer"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference">
+				</code>
+				<profile value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-organization"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

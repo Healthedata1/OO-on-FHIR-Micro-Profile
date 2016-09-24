@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
+	<id value="aoes"/>
+	<url value="http://hl7.org/fhir/us/lab/ValueSet/aoes"/>
+	<name value="Ask at Order Entry Questions"/>
+	<status value="draft"/>
+	<publisher value="Orders and Observations Work Group"/>
+	<date value="2016-09-22"/>
+	<description value="The [LOINC](http://loinc.org/) codes used to describe ask at order entry questions.  For further discussion and a more complete list of AOEs see [EDOS](http://www.hl7.org/documentcenter/public/standards/dstu/V2_IG_LTCF_R2_DSTU_R2_2015SEP.pdf)."/>
+	<compose>
+		<include>
+			<system value="http://loinc.org"/>
+			<concept>
+				<code value="29463-7"/>
+				<display value="Body weight"/>
+				<designation>
+					<value value="Patient Weight"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="30525-0"/>
+				<display value="Age"/>
+				<designation>
+					<value value="Patient Age"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="32624-9"/>
+				<display value="Race"/>
+				<designation>
+					<value value="Patient&apos;s clinically relevant Race"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="35659-2"/>
+				<display value="Age at specimen collection"/>
+				<designation>
+					<value value="Age of patient at specimen collection"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="42784-9"/>
+				<display value="Ethnic background Stated"/>
+				<designation>
+					<value value="Patient&apos;s clinically relevant Ethnic background"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="46098-0"/>
+				<display value="Sex"/>
+				<designation>
+					<value value="Patient&apos;s clinically relevant Gender"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="49541-6"/>
+				<display value="Fasting status [Presence] - reported"/>
+				<designation>
+					<value value="Patient&apos;s reported fasting status"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="55752-0"/>
+				<display value="Other Patient Information "/>
+				<designation>
+					<value value="Clinical history of patient pertinent to order - narrative"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="8302-2"/>
+				<display value="Body Height (Methodless)"/>
+				<designation>
+					<value value="Patient Height"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="19153-6"/>
+				<display value="Collection amount of urine"/>
+				<designation>
+					<value value="Total amount of urine collected"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="13362-9"/>
+				<display value="Collection duration of Urine"/>
+				<designation>
+					<value value="Time over which urine was collected"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="8665-2"/>
+				<display value="Last menstrual period start "/>
+				<designation>
+					<value value="What is the start date of the patient&apos;s last menstrual period?"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="19774-9"/>
+				<display value="Cytology study comment Cervical or vaginal smear or scraping Cyto stain "/>
+				<designation>
+					<value value="Provide results of previous cytology/biopsy and the date and testing location and specimenID"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="11951-1"/>
+				<display value="Fetal [Identifier] Identifier"/>
+				<designation>
+					<value value="Fetal Identifier"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="11778-8"/>
+				<display value="Delivery date Estimated"/>
+				<designation>
+					<value value="Delivery date Estimated"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="11878-6"/>
+				<display value="Number of Fetuses by US"/>
+				<designation>
+					<value value="Number of Fetuses by US"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="11957-8"/>
+				<display value="Fetal Crown Rump length US"/>
+				<designation>
+					<value value="Fetal Crown Rump Length by US"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="12146-7"/>
+				<display value="Fetal Nuchal fold thickness US"/>
+				<designation>
+					<value value="Fetal Nuchal translucency by US"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="49051-6"/>
+				<display value="Gestational age in weeks"/>
+				<designation>
+					<value value="Gestational age in weeks"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="49052-4"/>
+				<display value="Gestational age in days"/>
+				<designation>
+					<value value="Gestational age in days"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="21299-3"/>
+				<display value="Gestational age method"/>
+				<designation>
+					<value value="Gestational age method"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="33248-6"/>
+				<display value="Diabetes status"/>
+				<designation>
+					<value value="What type of diabetes does the patient have?"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="34970-4"/>
+				<display value="Ultrasound Date"/>
+				<designation>
+					<value value="Ultrasound Date"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="49088-8"/>
+				<display value="Sonographer name"/>
+				<designation>
+					<value value="Sonographer name"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="49089-6"/>
+				<display value="[Identifier] Sonographer"/>
+				<designation>
+					<value value=" Sonographer ID  with assigning authority"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="42797-1"/>
+				<display value="Age at first pregnancy"/>
+				<designation>
+					<value value="Age at first pregnancy"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="63888-2"/>
+				<display value="Age at first menstrual period"/>
+				<designation>
+					<value value="Age at first menstrual period"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="63890-8"/>
+				<display value="Age at last  menstrual period"/>
+				<designation>
+					<value value="Age at last  menstrual period"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="8691-8"/>
+				<display value="History of Travel"/>
+				<designation>
+					<value value="Where has the patient traveled to and when?"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="11294-6"/>
+				<display value="Current employment Narrative - reported"/>
+				<designation>
+					<value value="What is your current employment"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="63741-3"/>
+				<display value="For whom did you work at your main job or business"/>
+				<designation>
+					<value value="For whom did you work at your main job or business"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="63741-3"/>
+				<display value="For whom did you work at your main job or business"/>
+				<designation>
+					<value value="For whom did you work at your main job or business"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="63746-2"/>
+				<display value="About how long have you worked for your employer in your occupation"/>
+				<designation>
+					<value value="About how long have you worked for your employer in your occupation"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="63758-7"/>
+				<display value="What was the location of this company [Address]"/>
+				<designation>
+					<value value="Address of employer"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="58957-2"/>
+				<display value="Heparin given [Type]"/>
+				<designation>
+					<value value="Type of heparin given"/>
+				</designation>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

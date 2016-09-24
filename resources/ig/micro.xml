@@ -40,6 +40,12 @@
 				<reference value="StructureDefinition/gramstain-component"/>
 			</sourceReference>
 		</resource>
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/aoe-observation"/>
+			</sourceReference>
+		</resource>
 		<!-- *********************value sets value sets value sets value sets **************************-->
 		<resource>
 			<example value="false"/>
@@ -63,6 +69,12 @@
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/gramstain-bacteria-codes"/>
+			</sourceReference>
+		</resource>
+				<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/aoes"/>
 			</sourceReference>
 		</resource>
 		<!--		******************StructureMapStructureMapStructureMap******************** 
