@@ -46,6 +46,13 @@
 				<reference value="StructureDefinition/aoe-observation"/>
 			</sourceReference>
 		</resource>
+		
+						<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/other-observation"/>
+			</sourceReference>
+		</resource>
 		<!-- *********************value sets value sets value sets value sets **************************-->
 		<resource>
 			<example value="false"/>

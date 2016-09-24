@@ -16,7 +16,7 @@ Organism Observation|[US-Core Observation],[USLAB Observation Panel]|Observation
 Organism Growth Observations|[US-Core Observation],[USLAB Numeric Observation]|Observation
 Organism Colony Count Observations|[US-Core Observation],[USLAB Observation Panel]|Observation
 [AOE Observations](aoe-observation.html)|[US-Core Observation],[USLAB Coded Observation],[USLAB Numeric Observation]|Observation
-Other Micro Observations|[US-Core Observation],[USLAB Observation Panel]|Observation
+[Other Micro Observations](other-observation.html)|[US-Core Observation],[USLAB Observation Panel]|Observation
 Micro ABX Susceptibility Coded Observations|[US-Core Observation],[USLAB Coded Observation]|Observation
 Micro ABX Susceptibility Numeric Observations|[US-Core Observation],[USLAB Numeric Observation]|Observation
 
