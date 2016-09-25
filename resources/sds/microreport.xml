@@ -98,8 +98,8 @@
 		<element id="uscore-microreport-17">
 			<path value="DiagnosticReport.code"/>
 			<binding>
-				<strength value="extensible"></strength>
-				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/microreport-codes"></valueSetUri>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.org/fhir/us/lab/ValueSet/microreport-codes"/>
 			</binding>
 		</element>
 		<element id="uscore-microreport-12">
@@ -113,6 +113,54 @@
 		</element>
 		<element id="uscore-microreport-13">
 			<path value="DiagnosticReport.specimen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-microreport-20">
+			<path value="DiagnosticReport.result"/>
+			<name value="ResultProfiles"/>
+			<slicing>
+				<discriminator value="@profile"/>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="uscore-microreport-21">
+			<path value="DiagnosticReport.result"/>
+			<name value="GramstainProfile"/>
+			<min value="0"/>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/gramstain-component"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-microreport-22">
+			<path value="DiagnosticReport.result"/>
+			<name value="GramstainProfile"/>
+			<min value="0"/>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/organism-observation"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-microreport-23">
+			<path value="DiagnosticReport.result"/>
+			<name value="GramstainProfile"/>
+			<min value="0"/>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/aoe-observation"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="uscore-microreport-24">
+			<path value="DiagnosticReport.result"/>
+			<name value="GramstainProfile"/>
+			<min value="0"/>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/us/lab/StructureDefinition/other-observation"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="uscore-microreport-14">

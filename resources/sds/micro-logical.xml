@@ -70,7 +70,7 @@
 			</type>
 			<mapping>
 				<identity value="Profile"/>
-				<map value="MicroDiagnosticReport.result  Reference(GramStainObservationProfile)"/>
+				<map value="MicroDiagnosticReport.result  Reference(http://hl7.org/fhir/us/lab/StructureDefinition/gramstain-component)"/>
 			</mapping>
 			<mapping>
 				<identity value="v2"/>
@@ -92,7 +92,8 @@
 			</type>
 			<mapping>
 				<identity value="Profile"/>
-				<map value="MicroDiagnosticReport.result  Reference(OtherObservationProfile)"/>
+				<map value="MicroDiagnosticReport.result  Reference(http://hl7.org/fhir/us/lab/StructureDefinition/other-observation
+				)"/>
 			</mapping>
 			<mapping>
 				<identity value="v2"/>
@@ -114,7 +115,7 @@
 			</type>
 			<mapping>
 				<identity value="Profile"/>
-				<map value="MicroDiagnosticReport.result  Reference(OrganismObservationProfile)"/>
+				<map value="MicroDiagnosticReport.result  Reference(http://hl7.org/fhir/us/lab/StructureDefinition/organism-observation)"/>
 			</mapping>
 			<mapping>
 				<identity value="v2"/>
@@ -136,7 +137,7 @@
 			</type>
 			<mapping>
 				<identity value="Profile"/>
-				<map value="OrganismObservationProfile.related type=has-member target=Reference(SusceptibilityObservationProfile)"/>
+				<map value="OrganismObservationProfile.related type=has-member target=Reference(http://hl7.org/fhir/us/lab/StructureDefinition/susc-observation)"/>
 			</mapping>
 			<mapping>
 				<identity value="v2"/>
@@ -158,7 +159,7 @@
 			</type>
 			<mapping>
 				<identity value="Profile"/>
-				<map value="OrganismObservationProfile.related type=has-member target=Reference(GrowthObservationProfile)"/>
+				<map value="OrganismObservationProfile.related type=has-member target=Reference(http://hl7.org/fhir/us/lab/StructureDefinition/growth-observation)"/>
 			</mapping>
 			<mapping>
 				<identity value="v2"/>
@@ -180,7 +181,7 @@
 			</type>
 			<mapping>
 				<identity value="Profile"/>
-				<map value="OrganismObservationProfile.related type=has-member target=Reference(ColonyCtObservationProfile)"/>
+				<map value="OrganismObservationProfile.related type=has-member target=Reference(http://hl7.org/fhir/us/lab/StructureDefinition/count-observation)"/>
 			</mapping>
 			<mapping>
 				<identity value="v2"/>
@@ -202,7 +203,7 @@
 			</type>
 			<mapping>
 				<identity value="Profile"/>
-				<map value="OrganismObservationProfile.related type=has-member target=Reference(OtherObservationProfile)"/>
+				<map value="OrganismObservationProfile.related type=has-member target=Reference(http://hl7.org/fhir/us/lab/StructureDefinition/other-observation)"/>
 			</mapping>
 			<mapping>
 				<identity value="v2"/>
