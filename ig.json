@@ -11,6 +11,7 @@
 		"txCache": "txCache",
 		"specification": "http://hl7-fhir.github.io/"
 	},
+		"sct-edition": "http://snomed.info/sct/731000124108",
 	"extraTemplates": [
 		"mappings", "logical"
 	],
@@ -132,10 +133,6 @@
 		"ValueSet/colonycount": {
 			"source": "valuesets/valueset-colonycount.xml",
 			"base": "colonycount.html"
-		},
-		"Observation/gramstain1": {
-			"source": "observation-gramstain1.xml",
-			"base": "gramstain1.html"
 		}
 	}
 }

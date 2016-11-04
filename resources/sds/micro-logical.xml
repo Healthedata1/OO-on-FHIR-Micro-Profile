@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd/structuredefinition.xsd">
 	<id value="microsusc"/>
 	<text>
 		<status value="generated"/>
@@ -7,7 +7,7 @@
 	</text>
 	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/microsusc"/>
 	<name value="MicroSusc"/>
-	<display value="Bacterial Culture and Susceptibility Logical Model"/>
+	<title value="Bacterial Culture and Susceptibility Logical Model"/>
 	<status value="draft"/>
 	<publisher value="Health Level Seven International fhir"/>
 	<contact>

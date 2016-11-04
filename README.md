@@ -1,4 +1,5 @@
 # OO-on-FHIR-Micro-Profile
+
 This is the repository for OO on FHIR Micro Profile FHIR IG which includes the logical model and derived profiles.
 
 GitHub will automatically trigger a new build whenever you commit changes.
@@ -14,4 +15,3 @@ http://ig.fhir.me/Healthedata1/OO-on-FHIR-Micro-Profile
 ### Find debugging info about the build
 
 http://ig.fhir.me/Healthedata1/OO-on-FHIR-Micro-Profile/debug.tgz
-
