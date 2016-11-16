@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/build/publish/structuredefinition.xsd">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/valueset.xsd">
 	<id value="count-observation"/>
 	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/count-observation"/>
 	<name value="US-Core Colony Count Observation Profile"/>
@@ -9,12 +9,12 @@
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
-	<baseDefinition value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-resultobs"/>
+	<baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
 	<derivation value="constraint"/>
 	<differential>
 		<element id="uscore-count-1">
 			<path value="Observation"/>
-			<name value="US-Core Colony Count Observation Profile"/>
+			<short value="US-Core Colony Count Observation Profile"/>
 			<definition value="This Profile on Observation defines the colony count observations for a culture.  Laboratories may Quantify the bacteria growth in culture using a variety of methods."/>
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
@@ -55,28 +55,28 @@
 			<type>
 				<code value="Reference">
 				</code>
-				<profile value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-organization"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
 		<!--EH  needed to name the US-core slices in ordere to remove slices  - the snapshot view does not show these reslicing changes only shows up in the differential.  may be simpler to change US-core to invarients to alow slicing down the road GFORGE #12178 -->
 		<element id="uscore-count-14">
 			<path value="Observation.value[x]"/>
-			<name value="DAFValueType"/>
+			<sliceName value= "US CoreValueType"/>
 		</element>
 		<element id="uscore-count-16">
 			<path value="Observation.valueQuantity"/>
-			<name value="DAFQuantityType"/>
+			<sliceName value= "US CoreQuantityType"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="uscore-count-15">
 			<path value="Observation.valueCodeableConcept"/>
-			<name value="DAFCodeType"/>
+			<sliceName value= "US CoreCodeType"/>
 			<max value="0"/>
 		</element>
 		<element id="uscore-count-17">
 			<path value="Observation.value[x]"/>
-			<name value="DAFOtherType"/>
+			<sliceName value= "US CoreOtherType"/>
 			<max value="0"/>
 		</element>
 		<element id="uscore-count-8">

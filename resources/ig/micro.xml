@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/fhir-all-xsd/implementationguide.xsd">
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/valueset.xsd">
 	<id value="microsusc"/>
-	<url value="http://hl7.org/fhir/us/lab/microsusc"/>
+	<url value="http://hl7.org/fhir/us/lab/ImplementationGuide/microsusc"/>
 	<version value="1"/>
 	<name value="MicroSusc"/>
 	<status value="draft"/>
 	<experimental value="false"/>
 	<publisher value="OO"/>
+	
+	<!--
 	<jurisdiction>
 		<coding>
 			<system value="urn:iso:std:iso:3166"/>
 			<code value="US"/>
 		</coding>
 	</jurisdiction>
-	<!--
+	
 	<dependency>
 		<type value="reference"/>
 		<uri value="http://hl7.org/fhir/uslab"/>
@@ -33,43 +35,54 @@
 			<sourceReference>
 				<reference value="StructureDefinition/microreport"/>
 			</sourceReference>
-		</resource>
+		</resource>		
+		
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/gramstain-component"/>
 			</sourceReference>
 		</resource>
+	
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/aoe-observation"/>
 			</sourceReference>
 		</resource>
+		
+		
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/other-observation"/>
 			</sourceReference>
 		</resource>
+		
+	
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/organism-observation"/>
 			</sourceReference>
 		</resource>
+	
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/susc-observation"/>
 			</sourceReference>
 		</resource>
+	
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/growth-observation"/>
 			</sourceReference>
 		</resource>
+		
 		<resource>
 			<example value="false"/>
 			<sourceReference>

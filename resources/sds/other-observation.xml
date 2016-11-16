@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR/ehaas/Documents/FHIR/build/publish/structuredefinition.xsd">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir http://build.fhir.org/valueset.xsd">
 	<id value="other-observation"/>
 	<url value="http://hl7.org/fhir/us/lab/StructureDefinition/other-observation"/>
 	<name value="US-Core Other Observation Profile"/>
@@ -9,12 +9,12 @@
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
-	<baseDefinition value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-resultobs"/>
+	<baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observationresults"/>
 	<derivation value="constraint"/>
 	<differential>
 		<element id="uscore-other-1">
 			<path value="Observation"/>
-			<name value="US-Core Other Observation Profile"/>
+			<short value="US-Core Other Observation Profile"/>
 			<definition value="This Profile on Observation defines any other observations not otherwise listed for a culture. Labs can report a variety of other observations for a micro report. Many of these fall into the generic other category."/>
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
@@ -48,7 +48,7 @@
 			<type>
 				<code value="Reference">
 				</code>
-				<profile value="http://hl7.org/fhir/us/daf/StructureDefinition/daf-core-organization"/>
+				<targetProfile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

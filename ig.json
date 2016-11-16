@@ -32,8 +32,8 @@
 	"canonicalBase": "http://hl7.org/fhir/us/lab",
 	"dependencyList": [
 		{
-			"name": "DAF",
-			"location": "http://hl7.org/fhir/current/daf",
+			"name": "uscore",
+			"location": "http://ig.fhir.me/Healthedata1/US-Core",
 			"source": "resources"
 		}
 	],
