@@ -33,8 +33,7 @@
 	"dependencyList": [
 		{
 			"name": "uscore",
-			"location": "http://ig.fhir.me/Healthedata1/US-Core",
-			"source": "resources"
+			"location": "http://hl7.org/fhir/us/core"
 		}
 	],
 	"source": "ig/micro.xml",
